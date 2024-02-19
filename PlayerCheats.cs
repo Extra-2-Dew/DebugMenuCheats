@@ -7,6 +7,7 @@ namespace DebugMenuCheats
 	public class PlayerCheats
 	{
 		private static bool godModeToggled;
+		private static bool noClipToggled;
 
 		[Cheat(commandName: "god", commandAliases: ["godmode"])]
 		private void ToggleGodMode(string[] args)
@@ -28,6 +29,43 @@ namespace DebugMenuCheats
 
 			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!", godModeToggled ? "#6ed948" : "#d94343"));
 		}
+
+		[Cheat(commandName: "noclip")]
+		private void ToggleNoClip(string[] args)
+		{
+			if (args.Length > 0 && args[0] == "help")
+			{
+				DebugMenuCommands.Instance.UpdateOutput("Toggles Ittle's main collider to disable her hitbox,\nallowing you to walk through walls.");
+				return;
+			}
+
+			noClipToggled = !noClipToggled;
+			DoNoClip();
+
+			if (noClipToggled)
+			{
+				Events.OnPlayerSpawn += OnPlayerSpawn;
+			}
+			else
+				Events.OnPlayerSpawn -= OnPlayerSpawn;
+
+			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
+		}
+
+		private void DoNoClip()
+		{
+			// Disable Ittle's hitbox
+			EntityTag.GetEntityByName("PlayerEnt").GetComponent<BC_ColliderAACylinderN>().IsTrigger = noClipToggled;
+		}
+
+		#region Events
+
+		private void OnPlayerSpawn(Entity player, UnityEngine.GameObject camera, PlayerController controller)
+		{
+			DoNoClip();
+		}
+
+		#endregion Events
 
 		#region Patches
 
