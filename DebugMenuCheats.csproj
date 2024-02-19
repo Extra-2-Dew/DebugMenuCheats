@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net35</TargetFramework>
+    <AssemblyName>DebugMenuCheats</AssemblyName>
+    <Description>Debug menu cheats</Description>
+    <Version>0.0.1</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="DebugMenuCheats.csproj.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="UnityEngine.Modules" Version="5.6.7" IncludeAssets="compile" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" />
+		<!-- Publicize by assembly name -->
+		<Publicize Include="Assembly-CSharp" />
+	</ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp">
+			<Private>false</Private>
+			<HintPath>$(GameAssemblyPath)</HintPath>
+		</Reference>
+		<Reference Include="ModCore">
+			<Private>false</Private>
+			<HintPath>$(GameInstallPath)\BepInEx\plugins\ModCore\ModCore.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="Exists('$(ModInstallPath)')">
+		<Exec Command="xcopy /y &quot;$(TargetPath)&quot; &quot;$(ModInstallPath)&quot;" />
+	</Target>
+</Project>
