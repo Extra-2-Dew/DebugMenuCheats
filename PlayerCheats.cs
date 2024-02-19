@@ -1,11 +1,14 @@
 ﻿using HarmonyLib;
 using ModCore;
+using UnityEngine;
 
 namespace DebugMenuCheats
 {
 	[HarmonyPatch]
 	public class PlayerCheats
 	{
+		private static float moveSpeedMultiplier = 1;
+
 		private static bool godModeToggled;
 		private static bool noClipToggled;
 		private static bool likeABossToggled;
@@ -43,13 +46,6 @@ namespace DebugMenuCheats
 			noClipToggled = !noClipToggled;
 			DoNoClip();
 
-			if (noClipToggled)
-			{
-				Events.OnPlayerSpawn += OnPlayerSpawn;
-			}
-			else
-				Events.OnPlayerSpawn -= OnPlayerSpawn;
-
 			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
 		}
 
@@ -66,6 +62,36 @@ namespace DebugMenuCheats
 			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? "#6ed948" : "#d94343"));
 		}
 
+		[Cheat(commandName: "setspeed", commandAliases: ["speed"])]
+		private void SetMoveSpeed(string[] args)
+		{
+			if (args.Length > 0)
+			{
+				if (args[0] == "help")
+				{
+					DebugMenuCommands.Instance.UpdateOutput("Set Ittle's speed multiplier. Requires a number");
+					return;
+				}
+
+				if (args[0] == "default" || args[0] == "reset" || args[0] == "def")
+				{
+					moveSpeedMultiplier = 1;
+					DebugMenuCommands.Instance.UpdateOutput($"Reset Ittle's speed multiplier");
+					return;
+				}
+
+				if (float.TryParse(args[0], out moveSpeedMultiplier))
+				{
+					DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", "#6ed948"));
+					return;
+				}
+
+				DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
+			}
+
+			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText("Must specify a number!", Color.red));
+		}
+
 		private void DoNoClip()
 		{
 			// Disable Ittle's hitbox
@@ -74,7 +100,7 @@ namespace DebugMenuCheats
 
 		#region Events
 
-		private void OnPlayerSpawn(Entity player, UnityEngine.GameObject camera, PlayerController controller)
+		public void OnPlayerSpawn(Entity player, UnityEngine.GameObject camera, PlayerController controller)
 		{
 			DoNoClip();
 		}
@@ -124,6 +150,26 @@ namespace DebugMenuCheats
 			if (likeABossToggled)
 			{
 				__instance.SignalDeath();
+				return false;
+			}
+
+			return true;
+		}
+
+		[HarmonyPrefix]
+		[HarmonyPatch(typeof(Entity), nameof(Entity.Move))]
+		// If speed is overridden, change return value for Ittle's speed
+		public static bool Entity_Move_Patch(Vector3 V, ref Entity __instance)
+		{
+			if (__instance.name == "PlayerEnt")
+			{
+				if (__instance.realBody)
+				{
+					__instance.realBody.SetVelocity(V * moveSpeedMultiplier);
+				}
+				else
+					__instance.realTrans.position += V * moveSpeedMultiplier * Time.deltaTime;
+
 				return false;
 			}
 

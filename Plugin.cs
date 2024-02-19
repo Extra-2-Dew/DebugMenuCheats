@@ -14,12 +14,15 @@ namespace DebugMenuCheats
 	{
 		internal static ManualLogSource Log { get; private set; }
 
+		private PlayerCheats playerCheats = new();
+
 		private void Awake()
 		{
 			Log = Logger;
 			Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
 
 			DebugMenuCommands.OnDebugMenuInitialized += AddCommands;
+			AddEventHooks();
 
 			Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
 		}
@@ -51,6 +54,12 @@ namespace DebugMenuCheats
 					}
 				}
 			}
+		}
+
+		// Adds event subscriptions
+		private void AddEventHooks()
+		{
+			Events.OnPlayerSpawn += playerCheats.OnPlayerSpawn;
 		}
 	}
 }
