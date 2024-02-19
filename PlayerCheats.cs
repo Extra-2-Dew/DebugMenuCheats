@@ -8,6 +8,7 @@ namespace DebugMenuCheats
 	{
 		private static bool godModeToggled;
 		private static bool noClipToggled;
+		private static bool likeABossToggled;
 
 		[Cheat(commandName: "god", commandAliases: ["godmode"])]
 		private void ToggleGodMode(string[] args)
@@ -50,6 +51,19 @@ namespace DebugMenuCheats
 				Events.OnPlayerSpawn -= OnPlayerSpawn;
 
 			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
+		}
+
+		[Cheat(commandName: "likeaboss")]
+		private void ToggleLikeABoss(string[] args)
+		{
+			if (args.Length > 0 && args[0] == "help")
+			{
+				DebugMenuCommands.Instance.UpdateOutput("Toggles one hit kill mode for Ittle.\nEverything will die in one hit, including invincibile enemies");
+				return;
+			}
+
+			likeABossToggled = !likeABossToggled;
+			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? "#6ed948" : "#d94343"));
 		}
 
 		private void DoNoClip()
@@ -96,6 +110,24 @@ namespace DebugMenuCheats
 				return true;
 
 			return !godModeToggled;
+		}
+
+		[HarmonyPrefix]
+		[HarmonyPatch(typeof(Killable), nameof(Killable.HandleHit))]
+		// If likeaboss is active, Ittle kills everything in one hit
+		public static bool Killable_HandleHit_Patch(ref Killable __instance)
+		{
+			// If Entity is not player, don't apply patch
+			if (__instance.owner.name == "PlayerEnt")
+				return true;
+
+			if (likeABossToggled)
+			{
+				__instance.SignalDeath();
+				return false;
+			}
+
+			return true;
 		}
 
 		#endregion Patches
