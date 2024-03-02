@@ -12,12 +12,16 @@ namespace DebugMenuCheats
 	[BepInDependency("ModCore")]
 	public class Plugin : BaseUnityPlugin
 	{
-		internal static ManualLogSource Log { get; private set; }
-
+		private static Plugin instance;
 		private PlayerCheats playerCheats = new();
+
+		internal static Plugin Instance { get { return instance; } }
+		internal static ManualLogSource Log { get; private set; }
+		internal static DebugMenuCommands DMC { get { return DebugMenuCommands.Instance; } }
 
 		private void Awake()
 		{
+			instance = this;
 			Log = Logger;
 			Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
 

@@ -4,7 +4,7 @@
     <TargetFramework>net35</TargetFramework>
     <AssemblyName>DebugMenuCheats</AssemblyName>
     <Description>Debug menu cheats</Description>
-    <Version>0.0.1</Version>
+    <Version>1.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -30,6 +30,11 @@
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
 	<ItemGroup>
+		<None Update="Data\gotoData.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
 		<Reference Include="Assembly-CSharp">
 			<Private>false</Private>
 			<HintPath>$(GameAssemblyPath)</HintPath>
@@ -40,6 +45,6 @@
 		</Reference>
 	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="Exists('$(ModInstallPath)')">
-		<Exec Command="xcopy /y &quot;$(TargetPath)&quot; &quot;$(ModInstallPath)&quot;" />
+		<Exec Command="xcopy /y /s &quot;$(TargetDir)&quot; &quot;$(ModInstallPath)&quot;" />
 	</Target>
 </Project>

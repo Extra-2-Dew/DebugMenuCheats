@@ -1,0 +1,117 @@
+{
+	"scenes": [
+		{
+			"scene": "FluffyFields",
+			"names": [
+				"Fluffy",
+				"FF"
+			],
+			"spawns": [
+				"Intro",
+				"RestorePt1",
+				"DreamWorldOutside",
+				"SunkenLabyrinthOutside",
+				"Pepperpain",
+				"Coast",
+				"Fancy1",
+				"Fancy2",
+				"Fancy3",
+				"Slope",
+				"Star1",
+				"Star2",
+				"Star3",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(5.5, 0, -36.5)",
+							"angle": 0
+						},
+						{
+							"position": "(60, 0, -36.5)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(5.5, 0, -40.5)",
+							"angle": 180
+						},
+						{
+							"position": "(31.5, 0, -58)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(60, 0, -40.5)",
+							"angle": 180
+						},
+						{
+							"position": "(35.5, 0, -58)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "PillowFort",
+			"names": [
+				"PF",
+				"D1"
+			],
+			"spawns": [
+				"PillowFortInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(6.5, 0, -9)",
+							"angle": 0
+						},
+						{
+							"position": "(11, 0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(17, 0, -5.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27, 0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(33, 0, -5.5)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		}
+	]
+}
