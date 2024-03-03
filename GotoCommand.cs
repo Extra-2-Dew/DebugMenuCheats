@@ -13,7 +13,8 @@ namespace DebugMenuCheats
 	public class GotoCommand
 	{
 		private List<SceneData> allSceneData;
-		private FadeEffectData fadeData;
+		private FadeEffectData sceneFadeData;
+		private FadeEffectData roomFadeData;
 		private const string dataFileName = "gotoData.json";
 
 		private GotoData gotoData;
@@ -65,9 +66,9 @@ namespace DebugMenuCheats
 			gotoData.spawnName = sceneData.SpawnNames[0]; // Default to first spawn in list
 
 			// Create FadeEffectData
-			if (fadeData == null)
+			if (sceneFadeData == null)
 			{
-				fadeData = new()
+				sceneFadeData = new()
 				{
 					_targetColor = Color.black,
 					_fadeOutTime = 0.5f,
@@ -155,9 +156,9 @@ namespace DebugMenuCheats
 
 		private void LoadScene(float fadeInTime = 1.25f)
 		{
-			fadeData._fadeInTime = fadeInTime;
-			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, fadeData, Plugin.DMC.Saver);
-			fadeData._fadeInTime = 1.25f;
+			sceneFadeData._fadeInTime = fadeInTime;
+			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, sceneFadeData, Plugin.DMC.Saver);
+			sceneFadeData._fadeInTime = 1.25f;
 		}
 
 		private void SwitchRooms(bool doFade = true)
@@ -175,14 +176,17 @@ namespace DebugMenuCheats
 				Plugin.DMC.Menu.GetComponentInParent<PauseMenu>().Hide();
 			}
 
-			FadeEffectData roomFadeData = new()
+			if (roomFadeData == null)
 			{
-				_targetColor = Color.black,
-				_fadeOutTime = 0.5f,
-				_fadeInTime = 1.25f,
-				_faderName = "ScreenFade",
-				_useScreenPos = false
-			};
+				roomFadeData = new FadeEffectData()
+				{
+					_targetColor = Color.black,
+					_fadeOutTime = 0.5f,
+					_fadeInTime = 1.25f,
+					_faderName = "ScreenFade",
+					_useScreenPos = false
+				};
+			}
 
 			// Start room transition
 			player.GetEntityComponent<RoomSwitchable>().StartWarpTransition(position, position, fromRoom, toRoom, Vector3.zero, Vector3.zero, "warp", roomFadeData);
