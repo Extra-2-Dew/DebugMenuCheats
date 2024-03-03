@@ -96,8 +96,8 @@ namespace DebugMenuCheats
 				if (string.IsNullOrEmpty(gotoData.spawnName))
 				{
 					SceneData.RoomData room = sceneData.Rooms.FirstOrDefault(x => x.RoomName.ToLower() == spawnOrRoomArg.ToLower());
-					gotoData.roomName = room.RoomName;
-					gotoData.doorData = room.Doors[0];
+					gotoData.roomName = room != null ? room.RoomName : string.Empty;
+					gotoData.doorData = room?.Doors[0];
 
 					// If room is valid
 					if (!string.IsNullOrEmpty(gotoData.roomName))
