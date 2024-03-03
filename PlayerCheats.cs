@@ -115,11 +115,11 @@ namespace DebugMenuCheats
 		public static bool EntityHittable_HandleHit_Patch(ref HitData data, ref EntityHittable __instance)
 		{
 			// If Entity is not player, don't apply patch
-			if (__instance.owner.name != "PlayerEnt")
+			if (__instance.owner == null || __instance.owner.name != "PlayerEnt")
 				return true;
 
 			// If checkpoint, don't apply patch
-			if (data.dmg.baseDamage[0] < 0)
+			if (data.dmg.baseDamage.Length > 0 && data.dmg.baseDamage[0] < 0)
 				return true;
 
 			// Skip original method if godmode active
