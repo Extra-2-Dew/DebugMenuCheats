@@ -44,7 +44,5 @@
 			<HintPath>$(GameInstallPath)\BepInEx\plugins\ModCore\ModCore.dll</HintPath>
 		</Reference>
 	</ItemGroup>
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="Exists('$(ModInstallPath)')">
-		<Exec Command="xcopy /y /s &quot;$(TargetDir)&quot; &quot;$(ModInstallPath)&quot;" />
-	</Target>
+
 </Project>
