@@ -63,7 +63,8 @@ namespace DebugMenuCheats
 
 			string spawnOrRoomArg = args.Length > 1 ? args[1] : string.Empty;
 			gotoData.sceneName = sceneData.SceneName;
-			gotoData.spawnName = sceneData.SpawnNames[0]; // Default to first spawn in list
+			gotoData.spawnName = sceneData.SpawnNames.Count > 0 ? sceneData.SpawnNames[0] : string.Empty; // Default to first spawn in list
+			gotoData.doSave = sceneData.DoSave;
 
 			// Create FadeEffectData
 			if (sceneFadeData == null)
@@ -157,7 +158,7 @@ namespace DebugMenuCheats
 		private void LoadScene(float fadeInTime = 1.25f)
 		{
 			sceneFadeData._fadeInTime = fadeInTime;
-			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, sceneFadeData, Plugin.DMC.Saver);
+			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, sceneFadeData, gotoData.doSave ? Plugin.DMC.Saver : null);
 			sceneFadeData._fadeInTime = 1.25f;
 		}
 
@@ -234,24 +235,38 @@ namespace DebugMenuCheats
 				List<string> allSceneNames = new() { sceneName.ToLower() };
 				List<string> spawnNames = new();
 				List<SceneData.RoomData> roomData = new();
+				bool doSave = string.IsNullOrEmpty(sceneObj.GetString("doSave")) ? true : bool.Parse(sceneObj.GetString("doSave"));
 
 				// For each name value
-				foreach (JsonValue name in sceneObj.GetArray("names").objects)
+				JsonArray nameArray = sceneObj.GetArray("names");
+				for (int i = 0; i < nameArray.Length; i++)
+				{
+					JsonValue name = (JsonValue)nameArray.objects[i];
 					allSceneNames.Add(name.GetValue().ToLower());
+				}
 
 				// For each spawn value
-				foreach (JsonValue spawn in sceneObj.GetArray("spawns").objects)
+				JsonArray spawnArray = sceneObj.GetArray("spawns");
+				for (int i = 0; i < spawnArray.Length; i++)
+				{
+					JsonValue spawn = (JsonValue)spawnArray.objects[i];
 					spawnNames.Add(spawn.GetValue());
+				}
 
 				// For each room object
-				foreach (JsonObject roomObj in sceneObj.GetArray("rooms").objects.Cast<JsonObject>())
+				JsonArray roomArray = sceneObj.GetArray("rooms");
+				for (int i = 0; i < roomArray.Length; i++)
 				{
+					JsonObject roomObj = (JsonObject)roomArray.objects[i];
 					List<SceneData.RoomData.DoorData> doorData = new();
 					string roomName = roomObj.GetString("roomName");
 
 					// For each door object
-					foreach (JsonObject doorObj in roomObj.GetArray("doors").objects.Cast<JsonObject>())
+					JsonArray doorArray = roomObj.GetArray("doors");
+					for (int j = 0; j < doorArray.Length; j++)
 					{
+						JsonObject doorObj = (JsonObject)doorArray.objects[j];
+
 						// Parse position to Vector3
 						if (!ModCore.Utility.TryParseVector3(doorObj.GetString("position"), out Vector3 spawnPos))
 						{
@@ -275,7 +290,10 @@ namespace DebugMenuCheats
 				}
 
 				// Add scene data
-				sceneData.Add(new SceneData(sceneName, allSceneNames, spawnNames, roomData));
+				if (doSave)
+					sceneData.Add(new SceneData(sceneName, allSceneNames, spawnNames, roomData, true));
+				else
+					sceneData.Add(new SceneData(sceneName, allSceneNames, spawnNames, roomData, false));
 			}
 
 			return sceneData;
@@ -309,7 +327,7 @@ namespace DebugMenuCheats
 
 		private bool TryValidateScene(string arg, List<SceneData> scenes, out SceneData sceneData)
 		{
-			sceneData = scenes.FirstOrDefault(x => x.AllSceneNames.Contains(arg));
+			sceneData = scenes.FirstOrDefault(x => x.AllSceneNames.Contains(arg.ToLower()));
 			return sceneData != null;
 		}
 
@@ -328,14 +346,22 @@ namespace DebugMenuCheats
 			/// The names of all the spawn points for the scene, case-sensitive
 			/// </summary>
 			public List<string> SpawnNames { get; }
+			/// <summary>
+			/// List of rooms
+			/// </summary>
 			public List<RoomData> Rooms { get; }
+			/// <summary>
+			/// Should the scene trigger a save when loaded to?
+			/// </summary>
+			public bool DoSave { get; }
 
-			public SceneData(string sceneName, List<string> allSceneNames, List<string> spawnNames, List<RoomData> rooms)
+			public SceneData(string sceneName, List<string> allSceneNames, List<string> spawnNames, List<RoomData> rooms, bool doSave = true)
 			{
 				SceneName = sceneName;
 				AllSceneNames = allSceneNames;
 				SpawnNames = spawnNames;
 				Rooms = rooms;
+				DoSave = doSave;
 			}
 
 			public class RoomData
@@ -381,6 +407,7 @@ namespace DebugMenuCheats
 			public string spawnName;
 			public string roomName;
 			public SceneData.RoomData.DoorData doorData;
+			public bool doSave;
 		}
 	}
 }

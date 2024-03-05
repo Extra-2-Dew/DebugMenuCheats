@@ -7,19 +7,19 @@
 				"FF"
 			],
 			"spawns": [
-				"Intro",
 				"RestorePt1",
+				"PillowFortOutside",
 				"DreamWorldOutside",
 				"SunkenLabyrinthOutside",
-				"Pepperpain",
-				"Coast",
-				"Fancy1",
-				"Fancy2",
-				"Fancy3",
-				"Slope",
-				"Star1",
-				"Star2",
-				"Star3",
+				"FF_VH1",
+				"FF_CC1",
+				"FF_FR1",
+				"FF_FR2",
+				"FF_FR4",
+				"FF_SS1",
+				"FF_SW1",
+				"FF_SW3",
+				"FF_SW4",
 				"Fallback"
 			],
 			"rooms": [
@@ -65,6 +65,3954 @@
 			]
 		},
 		{
+			"scene": "CandyCoast",
+			"names": [
+				"SweetwaterCoast",
+				"SweetCoast",
+				"Coast",
+				"SC",
+				"CC"
+			],
+			"spawns": [
+				"RestorePt1",
+				"SandCastleOutside",
+				"CC_FF1",
+				"CC_SS1",
+				"CC_SW1",
+				"CC_SW2",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(48.5, 0, -78)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(52.5, 0, -78)",
+							"angle": 90
+						},
+						{
+							"position": "(99.5, 0, -74)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(103.5, 0, -74)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "FancyRuins",
+			"names": [
+				"Fancy",
+				"Ruins",
+				"FR"
+			],
+			"spawns": [
+				"RestorePt1",
+				"FR_FF2",
+				"FR_FF1",
+				"FR_FF4",
+				"FR_VH1",
+				"FR_FC1",
+				"FR_SW1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(25.5, 0.5, -36.5)",
+							"angle": 0
+						},
+						{
+							"position": "(74, 0, -36.5)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(25.5, 0.5, -40.5)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(74, 0, -40.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "FancyRuins2",
+			"names": [
+				"Fancy2",
+				"Ruins2",
+				"FR2"
+			],
+			"spawns": [
+				"RestorePt1",
+				"ArtExhibitOutside",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(4, 0, -21)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "StarWoods",
+			"names": [
+				"Star",
+				"SW"
+			],
+			"spawns": [
+				"RestorePt1",
+				"TrashCaveOutside",
+				"SW_FF1",
+				"SW_FF3",
+				"SW_FF4",
+				"SW_FR1",
+				"SW_CC1",
+				"SW_CC2",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(65.5, 0, -7)",
+							"angle": 270
+						},
+						{
+							"position": "(65.5, 0, -18.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(69.5, 0, -7)",
+							"angle": 90
+						},
+						{
+							"position": "(69.5, 0, -18.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(141, 0, -4)",
+							"angle": 180
+						},
+						{
+							"position": "(140, 0, -44)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "StarWoods2",
+			"names": [
+				"Star2",
+				"SW2"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(19, 2, -4)",
+							"angle": 180
+						},
+						{
+							"position": "(8, 2, -8)",
+							"angle": 180
+						},
+						{
+							"position": "(32, 1, -2)",
+							"angle": 180
+						},
+						{
+							"position": "(82, 1, -8)",
+							"angle": 270
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "SlipperySlope",
+			"names": [
+				"Slippery",
+				"Slope",
+				"SS"
+			],
+			"spawns": [
+				"RestorePt1",
+				"SS_FF1",
+				"SS_CC1",
+				"SS_VH1",
+				"SS_LR1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(79, 1, -49.5)",
+							"angle": 0
+						},
+						{
+							"position": "(8, 3, -49.5)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(79, 1, -53.5)",
+							"angle": 180
+						},
+						{
+							"position": "(8, 3, -53.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "VitaminHills",
+			"names": [
+				"VH",
+				"PepperpainPrairie",
+				"Pepperpain",
+				"Prairie",
+				"Pep",
+				"PP",
+				"Vitamin",
+				"VitaminHill"
+			],
+			"spawns": [
+				"RestorePt1",
+				"VH_FF1",
+				"VH_FR1",
+				"VH_SS1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(65.5, 0, -20)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(69.5, 0, -20)",
+							"angle": 90
+						},
+						{
+							"position": "(133.5, 0, -33.5)",
+							"angle": 270
+						},
+						{
+							"position": "(133.5, 0, -19)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(137.5, 0, -33.5)",
+							"angle": 90
+						},
+						{
+							"position": "(137.5, 0, -19)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "VitaminHills2",
+			"names": [
+				"VH2",
+				"PepperpainPrairie2",
+				"Pepperpain2",
+				"Prairie2",
+				"Pep2",
+				"PP2",
+				"Vitamin2",
+				"VitaminHill2",
+				"PepperpainTrail",
+				"PepTrail"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(6, 0, -5)",
+							"angle": 180
+						},
+						{
+							"position": "(25.5, 0, -3)",
+							"angle": 270
+						},
+						{
+							"position": "(58, 0, -5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "VitaminHills3",
+			"names": [
+				"VH",
+				"PepperpainPrairie3",
+				"Pepperpain3",
+				"Prairie3",
+				"Pep3",
+				"PP3",
+				"Vitamin3",
+				"VitaminHill3",
+				"PepperpainMountain",
+				"PepMountain"
+			],
+			"spawns": [
+				"RestorePt1",
+				"RestorePt2",
+				"PotassiumMineOutside",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(3, 0, -33)",
+							"angle": 180
+						},
+						{
+							"position": "(9, 5, -6)",
+							"angle": 270
+						},
+						{
+							"position": "(42, 2, -5)",
+							"angle": 180
+						},
+						{
+							"position": "(39, 0, -27)",
+							"angle": 180
+						},
+						{
+							"position": "(47, 2, -13)",
+							"angle": 180
+						},
+						{
+							"position": "(64, 1, -11)",
+							"angle": 180
+						},
+						{
+							"position": "(60, 0, -29)",
+							"angle": 270
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "FrozenCourt",
+			"names": [
+				"Frozen",
+				"FC"
+			],
+			"spawns": [
+				"RestorePt1",
+				"BoilingGraveOutside",
+				"FC_FR1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(5, 0, -3)",
+							"angle": 180
+						},
+						{
+							"position": "(13, 0, -34)",
+							"angle": 180
+						},
+						{
+							"position": "(26, 0, -4)",
+							"angle": 90
+						},
+						{
+							"position": "(25, 0, -32)",
+							"angle": 180
+						},
+						{
+							"position": "(56, 0, -10)",
+							"angle": 180
+						},
+						{
+							"position": "(59, 0, -49)",
+							"angle": 180
+						},
+						{
+							"position": "(52, 0, -61)",
+							"angle": 270
+						},
+						{
+							"position": "(52, 0, -61)",
+							"angle": 270
+						},
+						{
+							"position": "(52, 0, -61)",
+							"angle": 270
+						},
+						{
+							"position": "(61, 0, -60)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "LonelyRoad",
+			"names": [
+				"Lonely",
+				"LR"
+			],
+			"spawns": [
+				"RestorePt1",
+				"GrandLibraryOutside",
+				"LR_SS1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(48.5, 0, -6)",
+							"angle": 270
+						},
+						{
+							"position": "(13, 0, -5)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(52.5, 0, -6)",
+							"angle": 90
+						},
+						{
+							"position": "(64, 0, -16)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(80, 0, -3)",
+							"angle": 180
+						},
+						{
+							"position": "(76, 0, -29)",
+							"angle": 180
+						},
+						{
+							"position": "(95, 0, -17)",
+							"angle": 180
+						},
+						{
+							"position": "(95, 0, -4)",
+							"angle": 180
+						},
+						{
+							"position": "(115, 0, -32)",
+							"angle": 180
+						},
+						{
+							"position": "(143, 0, -31)",
+							"angle": 180
+						},
+						{
+							"position": "(123, 0, -5)",
+							"angle": 180
+						},
+						{
+							"position": "(142, 0, -21)",
+							"angle": 90
+						},
+						{
+							"position": "(167.5, 0, -6.5)",
+							"angle": 270
+						},
+						{
+							"position": "(167.5, 0, -21)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(171.5, 0, -6.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(171.5, 0, -21)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "LonelyRoad2",
+			"names": [
+				"Lonely2",
+				"LR2"
+			],
+			"spawns": [
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(3, 0, -34)",
+							"angle": 180
+						},
+						{
+							"position": "(12, 0, -23)",
+							"angle": 270
+						},
+						{
+							"position": "(8, 0, -8)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "FluffyFieldsCaves",
+			"names": [
+				"FluffyCaves",
+				"FFCaves"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -6.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(41.0, 0.0, -8.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -29.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -7.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -6.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(95.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(3.0, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(11.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(22.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -19.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -18.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(69.0, 0.0, -18.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(87.0, 0.0, -17.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(97.0, 0.0, -18.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(7.0, 0.0, -45.0)",
+							"angle": 270
+						},
+						{
+							"position": "(11.0, 0.0, -43.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(20.0, 0.0, -31.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(7.0, 0.0, -3.7)",
+							"angle": 180
+						},
+						{
+							"position": "(11.0, 0.0, -8.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(53.0, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(70.0, 0.0, -38.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(18.0, 0.0, -43.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(81.0, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(86.0, 0.0, -33.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "U2",
+					"doors": [
+						{
+							"position": "(86.0, 0.0, -38.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(7.0, 0.0, -56.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "X",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(34.0, 0.0, -54.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "Y",
+					"doors": [
+						{
+							"position": "(55.0, 0.0, -56.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "X2",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -54.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "S2",
+					"doors": [
+						{
+							"position": "(65.0, 0.0, -27.0)",
+							"angle": 180
+						},
+						{
+							"position": "(70.0, 0.0, -33.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "CandyCoastCaves",
+			"names": [
+				"CandyCaves",
+				"CCCaves",
+				"SweetwaterCoastCaves",
+				"SCCaves",
+				"CoastCaves"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(6.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(18.0, 0.0, -6.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(50.0, 0.0, -3.0)",
+							"angle": 270
+						},
+						{
+							"position": "(56.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(64.0, 0.0, -3.7)",
+							"angle": 180
+						},
+						{
+							"position": "(67.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(85.0, 0.0, -3.0)",
+							"angle": 90
+						},
+						{
+							"position": "(78.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(97.0, 0.0, -3.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(4.0, 0.0, -20.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(17.0, 0.0, -18.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -32.0)",
+							"angle": 0
+						},
+						{
+							"position": "(62.0, 0.0, -28.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J2",
+					"doors": [
+						{
+							"position": "(54.0, 0.0, -28.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(51.0, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(87.0, 0.0, -19.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(97.0, 0.0, -19.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(11.0, 0.0, -27.7)",
+							"angle": 180
+						},
+						{
+							"position": "(6.0, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(25.0, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(25.0, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(36.0, 0.0, -32.0)",
+							"angle": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "FancyRuinsCaves",
+			"names": [
+				"FancyCaves",
+				"FRCaves"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(7.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(26.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -6.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -3.7)",
+							"angle": 180
+						},
+						{
+							"position": "(83.0, 0.0, -7.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(97.0, 0.0, -7.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(8.0, 0.0, -21.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(24.0, 0.0, -21.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(50.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -21.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(85.0, 0.0, -14.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(110.0, 0.0, -16.0)",
+							"angle": 0
+						},
+						{
+							"position": "(117.0, 0.0, -17.0)",
+							"angle": 270
+						},
+						{
+							"position": "(116.0, 0.0, -19.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(34.0, 0.0, -29.0)",
+							"angle": 90
+						},
+						{
+							"position": "(40.0, 0.0, -29.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(56.0, 0.0, -27.7)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(99.0, 0.0, -19.0)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "StarWoodsCaves",
+			"names": [
+				"StarCaves",
+				"SWCaves"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -8.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(22.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(34.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(51.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(65.0, 0.0, -7.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(78.0, 0.0, -9.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(94.0, 0.0, -6.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(2.0, 0.0, -21.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(21.0, 0.0, -20.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(49.0, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(68.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(84.0, 0.0, -19.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(5.0, 0.0, -27.7)",
+							"angle": 180
+						},
+						{
+							"position": "(7.0, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(92.0, 0.0, -19.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(22.0, 0.0, -27.7)",
+							"angle": 180
+						},
+						{
+							"position": "(22.0, 0.0, -32.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -28.0)",
+							"angle": 270
+						},
+						{
+							"position": "(33.0, 0.0, -32.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(87.0, 0.0, -27.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(69.0, 0.0, -32.0)",
+							"angle": 0
+						},
+						{
+							"position": "(49.0, 0.0, -32.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(94.0, 0.0, -29.0)",
+							"angle": 90
+						},
+						{
+							"position": "(101.0, 0.0, -29.0)",
+							"angle": 270
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "SlipperySlopeCaves",
+			"names": [
+				"SlopeCaves",
+				"SSCaves"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(4.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(26.0, 0.0, -8.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(36.0, 0.0, -3.7)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -7.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(53.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -7.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(98.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(7.0, 0.0, -16.7)",
+							"angle": 180
+						},
+						{
+							"position": "(7.0, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(17.0, 0.0, -20.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -18.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -19.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -15.0)",
+							"angle": 0
+						},
+						{
+							"position": "(87.0, 0.0, -21.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(116.0, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(109.0, 0.0, -15.0)",
+							"angle": 0
+						},
+						{
+							"position": "(92.0, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(7.0, 0.0, -31.0)",
+							"angle": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "VitaminHillsCaves",
+			"names": [
+				"VitaminCaves",
+				"VHCaves",
+				"PepperpainPrairieCaves",
+				"PepperpainCaves",
+				"PepCaves",
+				"PPCaves"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(9.0, 0.0, -8.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(20.0, 0.0, -8.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(35.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -3.7)",
+							"angle": 180
+						},
+						{
+							"position": "(67.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(101.0, 0.0, -6.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(117.0, 0.0, -6.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(2.0, 0.0, -18.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(22.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -18.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(54.0, 0.0, -17.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(97.0, 0.0, -19.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(2.0, 0.0, -32.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(25.0, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -32.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(115.0, 0.0, -17.0)",
+							"angle": 0
+						},
+						{
+							"position": "(111.0, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -31.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(70.0, 0.0, -27.7)",
+							"angle": 180
+						},
+						{
+							"position": "(62.0, 0.0, -32.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(80.0, 0.0, -32.0)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "FrozenCourtCaves",
+			"names": [
+				"FrozenCaves",
+				"FCCaves"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(11.0, 0.0, -4.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(22.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -5.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(51.0, 0.0, -8.0)",
+							"angle": 0
+						},
+						{
+							"position": "(51.0, 0.0, -3.7)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -9.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(78.0, 0.0, -7.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(93.0, 0.0, -4.0)",
+							"angle": 0
+						},
+						{
+							"position": "(95.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(2.0, 0.0, -21.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(26.0, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -26.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(55.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(71.0, 0.0, -15.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -17.0)",
+							"angle": 90
+						},
+						{
+							"position": "(87.0, 0.0, -17.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -27.2)",
+							"angle": 180
+						},
+						{
+							"position": "(52.0, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(20.0, 0.0, -18.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -19.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "LonelyRoadCaves",
+			"names": [
+				"LonelyCaves",
+				"LRCaves"
+			],
+			"spawns": [
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(39.0, 0.0, -32.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -5.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -6.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -2.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -6.0)",
+							"angle": 0
+						},
+						{
+							"position": "(72.0, 0.0, -3.0)",
+							"angle": 0
+						},
+						{
+							"position": "(70.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(78.0, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(86.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(96.0, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(114.0, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(9.0, 0.0, -15.0)",
+							"angle": 270
+						},
+						{
+							"position": "(-3.0, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(11.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(22.0, 0.0, -14.0)",
+							"angle": 90
+						},
+						{
+							"position": "(17.0, 0.0, -20.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -18.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -17.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(111.0, 0.0, -34.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -17.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(87.0, 0.0, -21.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(97.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(11.0, 0.0, -29.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(18.0, 0.0, -26.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(6.0, 0.0, -2.7)",
+							"angle": 180
+						},
+						{
+							"position": "(6.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(56.0, 0.0, -31.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -34.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(26.0, 0.0, -86.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(98.0, 0.0, -32.7)",
+							"angle": 180
+						},
+						{
+							"position": "(92.0, 0.0, -31.0)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep1",
+			"names": [
+				"AutumnClimb",
+				"AC"
+			],
+			"spawns": [
+				"Deep1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12, 1, -7.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep2",
+			"names": [
+				"TheVault",
+				"Vault",
+				"TV"
+			],
+			"spawns": [
+				"Deep2",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12, 0, -3.5)",
+							"angle": 270
+						},
+						{
+							"position": "(12, 0, -28.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(22.5, 0, -9)",
+							"angle": 0
+						},
+						{
+							"position": "(17, 0, -3.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27, 0, -3.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(32, 0, -3.5)",
+							"angle": 90
+						},
+						{
+							"position": "(32, 0, -28.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(22.5, 0, -30.5)",
+							"angle": 0
+						},
+						{
+							"position": "(17, 0, -28.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27, 0, -28.5)",
+							"angle": 270
+						},
+						{
+							"position": "(22.5, 0, -14)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep3",
+			"names": [
+				"PainfulPlain",
+				"PainPlain",
+				"PPlain"
+			],
+			"spawns": [
+				"Deep3",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(-11.5, 0, -8)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(-19, 0, -5.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep4",
+			"names": [
+				"FarthestShore",
+				"FS"
+			],
+			"spawns": [
+				"Deep4",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(-14.5, 0, 5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(-21, 0, 8.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep5",
+			"names": [
+				"ScrapYard",
+				"SY"
+			],
+			"spawns": [
+				"Deep5",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(22.5, 0, -9)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(3.5, 0, -20)",
+							"angle": 0
+						},
+						{
+							"position": "(11, 0, -17.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(17, 0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(22.5, 0, -14)",
+							"angle": 180
+						},
+						{
+							"position": "(27, 0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(22.5, 0, -21)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(33, 0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(40.5, 0, -20)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(11, 0, -29.5)",
+							"angle": 270
+						},
+						{
+							"position": "(3.5, 0, -27)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(22.5, 0, -30.5)",
+							"angle": 0
+						},
+						{
+							"position": "(20, 0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(22.5, 0, -27)",
+							"angle": 180
+						},
+						{
+							"position": "(25, 0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(40.5, 0, -26)",
+							"angle": 180
+						},
+						{
+							"position": "(33, 0, -29.5)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep6",
+			"names": [
+				"BrutalOasis",
+				"Oasis",
+				"BO"
+			],
+			"spawns": [
+				"Deep6",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(-12.5, 0, 0.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(-23, 0, 7.5)",
+							"angle": 180
+						},
+						{
+							"position": "(-16.5, 0, 0.5)",
+							"angle": 270
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep7",
+			"names": [
+				"FormerColossus",
+				"Colossus",
+				"FC"
+			],
+			"spawns": [
+				"Deep7",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(2.5, 0, -11.5)",
+							"angle": 0
+						},
+						{
+							"position": "(3, 0, 9)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(-10, 0, -20.5)",
+							"angle": 180
+						},
+						{
+							"position": "(2.5, 0, -15.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep8",
+			"names": [
+				"SandCrucible",
+				"Crucible"
+			],
+			"spawns": [
+				"Deep8",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12, 0, -16.5)",
+							"angle": 270
+						},
+						{
+							"position": "(7.5, 0, -18)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(22.5, 0, -21)",
+							"angle": 0
+						},
+						{
+							"position": "(17, 0, -16.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(7.5, 0, -31.5)",
+							"angle": 0
+						},
+						{
+							"position": "(7.5, 0, -26)",
+							"angle": 180
+						},
+						{
+							"position": "(10, 0, -28)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(19, 0, -28)",
+							"angle": 90
+						},
+						{
+							"position": "(22.5, 0, -26)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep9",
+			"names": [
+				"OceanCastle",
+				"OC"
+			],
+			"spawns": [
+				"Deep9",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(-14, 0, -10.5)",
+							"angle": 0
+						},
+						{
+							"position": "(-9, 0, -10.5)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(-12, 0, -22.5)",
+							"angle": 180
+						},
+						{
+							"position": "(-14, 0, -14.5)",
+							"angle": 180
+						},
+						{
+							"position": "(-9, 0, -14.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep10",
+			"names": [
+				"PromenadePath",
+				"Promenade",
+				"PromPath",
+				"PPath"
+			],
+			"spawns": [
+				"Deep10",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(3, 0, -10.5)",
+							"angle": 180
+						},
+						{
+							"position": "(6.5, 0, -14)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0, 9)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(10.5, 0, -14)",
+							"angle": 90
+						},
+						{
+							"position": "(10.5, 0, 9)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep11",
+			"names": [
+				"MazeOfSteel",
+				"MoS"
+			],
+			"spawns": [
+				"Deep11",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(18.5, 0, -21)",
+							"angle": 0
+						},
+						{
+							"position": "(42, 0, -18.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17, 0, -15)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(47, 0, -18.5)",
+							"angle": 90
+						},
+						{
+							"position": "(47, 0, -29.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(18.5, 0, -26)",
+							"angle": 180
+						},
+						{
+							"position": "(27, 0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(37, 0, -31.5)",
+							"angle": 0
+						},
+						{
+							"position": "(33, 0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(41, 0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(12, 0, -15)",
+							"angle": 270
+						},
+						{
+							"position": "(4, 0, -14)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(4, 0, -7)",
+							"angle": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep12",
+			"names": [
+				"WallOfText",
+				"WoT"
+			],
+			"spawns": [
+				"Deep12",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(10, 0, -7.5)",
+							"angle": 0
+						},
+						{
+							"position": "(12, 0, -4.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(17, 0, -4.5)",
+							"angle": 90
+						},
+						{
+							"position": "(56, 0, -2)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(56, 0, 3)",
+							"angle": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep13",
+			"names": [
+				"LostCityOfAvlopp",
+				"LostCity",
+				"Avlopp",
+				"LCoA"
+			],
+			"spawns": [
+				"Deep13",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(3.5, 0, -9)",
+							"angle": 0
+						},
+						{
+							"position": "(27, 0, -4.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(32, 0, -4.5)",
+							"angle": 90
+						},
+						{
+							"position": "(32, 0, -17.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(3.5, 0, -14)",
+							"angle": 180
+						},
+						{
+							"position": "(12, 0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(2, 0, -19)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(22, 0, -17)",
+							"angle": 180
+						},
+						{
+							"position": "(26, 0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(18, 0, -17.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(-3, 0, -19)",
+							"angle": 270
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep14",
+			"names": [
+				"NorthernEnd",
+				"NE"
+			],
+			"spawns": [
+				"Deep14",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(7.5, 0, -6)",
+							"angle": 180
+						},
+						{
+							"position": "(7.5, 0, -9)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(7.5, 0, -14)",
+							"angle": 180
+						},
+						{
+							"position": "(7.5, 0, -21)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(7.5, 0, -26)",
+							"angle": 180
+						},
+						{
+							"position": "(7.5, 0, -33)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(7.5, 0, -38)",
+							"angle": 180
+						},
+						{
+							"position": "(7.5, 0, -45)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(11, 0, -53.5)",
+							"angle": 180
+						},
+						{
+							"position": "(7.5, 0, -50)",
+							"angle": 180
+						},
+						{
+							"position": "(5.5, 0, -57)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(5.5, 0, -62)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep15",
+			"names": [
+				"MoonGarden",
+				"MG"
+			],
+			"spawns": [
+				"Deep15",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(0.5, 0, -10.5)",
+							"angle": 0
+						},
+						{
+							"position": "(-4, 0, 8)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(0.5, 0, -19.5)",
+							"angle": 0
+						},
+						{
+							"position": "(0.5, 0, -14.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep16",
+			"names": [
+				"Nowhere"
+			],
+			"spawns": [
+				"Deep16",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(6, 0, 1)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep17",
+			"names": [
+				"CaveOfMystery",
+				"CoM"
+			],
+			"spawns": [
+				"Deep17",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(7.5, 0, -9)",
+							"angle": 0
+						},
+						{
+							"position": "(10, 0, -7)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(20, 0, -7)",
+							"angle": 90
+						},
+						{
+							"position": "(23.5, 0, -2)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep18",
+			"names": [
+				"Somewhere"
+			],
+			"spawns": [
+				"Deep18",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(8, 0, -24)",
+							"angle": 0
+						},
+						{
+							"position": "(11, 0, -12.5)",
+							"angle": 180
+						},
+						{
+							"position": "(7.5, 0, -4)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep19",
+			"names": [
+				"TestRoom"
+			],
+			"spawns": [
+				"Deep19",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(52, 0, -14.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep19s",
+			"names": [
+				"ThePromisedRemedy",
+				"PromisedRemedy",
+				"Remedy",
+				"TPR",
+				"PR"
+			],
+			"spawns": [
+				"Deep19s",
+				"RestorePt1",
+				"RestorePt2",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(52, 0, -19)",
+							"angle": 0
+						},
+						{
+							"position": "(55, 0, -16)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(97.5, 0, 0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(97.5, 0, -65)",
+							"angle": 0
+						},
+						{
+							"position": "(97.5, 0, -14)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(49.5, 0, -45)",
+							"angle": 0
+						},
+						{
+							"position": "(52, 0, -41.5)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(36.5, 0, -56)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(49.5, 0, -57)",
+							"angle": 0
+						},
+						{
+							"position": "(57, 0, -55.5)",
+							"angle": 270
+						},
+						{
+							"position": "(49.5, 0, -50)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(62, 0, -55.5)",
+							"angle": 90
+						},
+						{
+							"position": "(67, 0, -54.5)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(25.5, 0, -64)",
+							"angle": 0
+						},
+						{
+							"position": "(22, 0, -67.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(32, 0, -67.5)",
+							"angle": 90
+						},
+						{
+							"position": "(36.5, 0, -67)",
+							"angle": 180
+						},
+						{
+							"position": "(41, 0, -67.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(48, 0, -67.5)",
+							"angle": 90
+						},
+						{
+							"position": "(56, 0, -66.5)",
+							"angle": 270
+						},
+						{
+							"position": "(52.5, 0, -69)",
+							"angle": 0
+						},
+						{
+							"position": "(49.5, 0, -62)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(63, 0, -66.5)",
+							"angle": 90
+						},
+						{
+							"position": "(64.5, 0, -68)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(82.5, 0, -69)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(12, 0, -75.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(18, 0, -75.5)",
+							"angle": 90
+						},
+						{
+							"position": "(25.5, 0, -74)",
+							"angle": 180
+						},
+						{
+							"position": "(26, 0, -78.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(41, 0, -75.5)",
+							"angle": 270
+						},
+						{
+							"position": "(33, 0, -78.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(52, 0, -78.5)",
+							"angle": 180
+						},
+						{
+							"position": "(52.5, 0, -74)",
+							"angle": 180
+						},
+						{
+							"position": "(47, 0, -75.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(64.5, 0, -74)",
+							"angle": 180
+						},
+						{
+							"position": "(70, 0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(79, 0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(82.5, 0, -76)",
+							"angle": 180
+						},
+						{
+							"position": "(86, 0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(93, 0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(100.5, 0, -78.5)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep20",
+			"names": [
+				"LudoCity",
+				"LC"
+			],
+			"spawns": [
+				"Deep20",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(52.5, 0, -12)",
+							"angle": 0
+						},
+						{
+							"position": "(11.5, 0, -13)",
+							"angle": 0
+						},
+						{
+							"position": "(23.5, 0, -17)",
+							"angle": 0
+						},
+						{
+							"position": "(10, 0, -4)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(-5, 0, -4)",
+							"angle": 270
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep21",
+			"names": [
+				"AbyssalPlain",
+				"APlain",
+				"Abyss",
+				"AP"
+			],
+			"spawns": [
+				"Deep21",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(10, 0, 1)",
+							"angle": 270
+						},
+						{
+							"position": "(-12, 0, -9)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep22",
+			"names": [
+				"PlaceFromYoungerDays",
+				"YoungerDays",
+				"PFYD"
+			],
+			"spawns": [
+				"Deep22",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(27, 0, -5)",
+							"angle": 270
+						},
+						{
+							"position": "(22, 0, -9)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(42, 0, -5)",
+							"angle": 270
+						},
+						{
+							"position": "(32, 0, -5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(52, 0, -9)",
+							"angle": 0
+						},
+						{
+							"position": "(47, 0, -5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(12, 0, -18)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(17, 0, -18)",
+							"angle": 90
+						},
+						{
+							"position": "(22, 0, -14)",
+							"angle": 180
+						},
+						{
+							"position": "(27, 0, -18)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(37, 0, -21)",
+							"angle": 0
+						},
+						{
+							"position": "(32, 0, -18)",
+							"angle": 90
+						},
+						{
+							"position": "(42, 0, -18)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(52, 0, -21)",
+							"angle": 0
+						},
+						{
+							"position": "(47, 0, -18)",
+							"angle": 90
+						},
+						{
+							"position": "(52, 0, -14)",
+							"angle": 180
+						},
+						{
+							"position": "(57, 0, -18)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(67, 0, -21)",
+							"angle": 0
+						},
+						{
+							"position": "(67, 0, -17)",
+							"angle": 180
+						},
+						{
+							"position": "(62, 0, -18)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(12, 0, -30)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(27, 0, -30)",
+							"angle": 270
+						},
+						{
+							"position": "(17, 0, -30)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(37, 0, -33)",
+							"angle": 0
+						},
+						{
+							"position": "(32, 0, -30)",
+							"angle": 90
+						},
+						{
+							"position": "(37, 0, -26)",
+							"angle": 180
+						},
+						{
+							"position": "(42, 0, -30)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(47, 0, -30)",
+							"angle": 90
+						},
+						{
+							"position": "(52, 0, -26)",
+							"angle": 180
+						},
+						{
+							"position": "(57, 0, -30)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(62, 0, -30)",
+							"angle": 90
+						},
+						{
+							"position": "(67, 0, -26)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(37, 0, -45)",
+							"angle": 0
+						},
+						{
+							"position": "(37, 0, -38)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(27, 0, -54)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(37, 0, -57)",
+							"angle": 0
+						},
+						{
+							"position": "(32, 0, -54)",
+							"angle": 90
+						},
+						{
+							"position": "(37, 0, -50)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep23",
+			"names": [
+				"AbandonedHouse",
+				"AH"
+			],
+			"spawns": [
+				"Deep23",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(7, 0, -8)",
+							"angle": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep24",
+			"names": [
+				"HouseOfSecrets",
+				"HoS"
+			],
+			"spawns": [
+				"Deep24",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(7, 0, -8)",
+							"angle": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep25",
+			"names": [
+				"DarkRoom",
+				"DarkHall"
+			],
+			"spawns": [
+				"Deep25",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(-31, 0, 0)",
+							"angle": 90
+						},
+						{
+							"position": "(29, 0, 0)",
+							"angle": 270
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "Deep26",
+			"names": [
+				"BadDream",
+				"BD"
+			],
+			"spawns": [
+				"Deep26",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(-13, 0, -7)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
 			"scene": "PillowFort",
 			"names": [
 				"PF",
@@ -80,12 +4028,12 @@
 					"roomName": "A",
 					"doors": [
 						{
-							"position": "(6.5, 0, -9)",
-							"angle": 0
+							"position": "(11.0, 0.0, -5.5)",
+							"angle": 270
 						},
 						{
-							"position": "(11, 0, -5.5)",
-							"angle": 270
+							"position": "(6.5, 0.0, -9.0)",
+							"angle": 0
 						}
 					]
 				},
@@ -93,11 +4041,11 @@
 					"roomName": "B",
 					"doors": [
 						{
-							"position": "(17, 0, -5.5)",
+							"position": "(17.0, 0.0, -5.5)",
 							"angle": 90
 						},
 						{
-							"position": "(27, 0, -5.5)",
+							"position": "(27.0, 0.0, -5.5)",
 							"angle": 270
 						}
 					]
@@ -106,12 +4054,6139 @@
 					"roomName": "C",
 					"doors": [
 						{
-							"position": "(33, 0, -5.5)",
+							"position": "(33.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(6.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(6.5, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -20.0)",
+							"angle": 0
+						},
+						{
+							"position": "(26.0, 0.0, -17.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(36.0, 0.0, -17.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(10.0, 0.0, -30.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(7.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -27.0)",
+							"angle": 180
+						},
+						{
+							"position": "(18.0, 0.0, -39.5)",
+							"angle": 90
+						},
+						{
+							"position": "(18.0, 0.0, -30.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -30.5)",
+							"angle": 270
+						},
+						{
+							"position": "(27.0, 0.0, -39.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -30.5)",
+							"angle": 90
+						},
+						{
+							"position": "(38.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(7.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(11.0, 0.0, -39.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -39.5)",
+							"angle": 90
+						},
+						{
+							"position": "(38.5, 0.0, -38.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "SandCastle",
+			"names": [
+				"SC",
+				"D2"
+			],
+			"spawns": [
+				"SandCastleInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(11.0, 0.0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(25.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(17.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -5.0)",
+							"angle": 270
+						},
+						{
+							"position": "(56.0, 0.0, -7.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(68.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(65.0, 0.0, -5.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(11.0, 0.0, -19.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(25.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(17.0, 0.0, -19.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -17.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(32.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(42.0, 0.0, -29.5)",
+							"angle": 270
+						},
+						{
+							"position": "(32.0, 0.0, -17.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(68.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(47.0, 0.0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(48.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(68.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(56.0, 0.0, -14.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -29.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0.0, -26.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(48.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(57.0, 0.0, -39.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(68.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(62.0, 0.0, -39.5)",
 							"angle": 90
 						}
 					]
 				}
 			]
+		},
+		{
+			"scene": "ArtExhibit",
+			"names": [
+				"AE",
+				"D3"
+			],
+			"spawns": [
+				"ArtExhibitInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -7.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -5.5)",
+							"angle": 270
+						},
+						{
+							"position": "(27.0, 0.0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -7.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -5.5)",
+							"angle": 90
+						},
+						{
+							"position": "(42.0, 0.0, -5.5)",
+							"angle": 270
+						},
+						{
+							"position": "(35.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(35.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(33.5, 0.0, -19.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(17.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(25.0, 0.0, -31.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(33.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(42.0, 0.0, -30.0)",
+							"angle": 270
+						},
+						{
+							"position": "(40.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -31.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -30.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(18.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(26.0, 0.0, -42.5)",
+							"angle": 270
+						},
+						{
+							"position": "(21.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(22.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(26.0, 0.0, -54.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(40.5, 0.0, -39.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -42.5)",
+							"angle": 90
+						},
+						{
+							"position": "(33.5, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -53.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(41.0, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -54.5)",
+							"angle": 90
+						},
+						{
+							"position": "(42.0, 0.0, -51.5)",
+							"angle": 270
+						},
+						{
+							"position": "(33.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -51.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(21.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -67.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(38.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(41.0, 0.0, -63.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -67.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(38.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(17.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(49.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "TrashCave",
+			"names": [
+				"TC",
+				"D4"
+			],
+			"spawns": [
+				"TrashCaveInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(99.5, 0.0, -27.0)",
+							"angle": 180
+						},
+						{
+							"position": "(92.0, 0.0, -28.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(18.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(69.0, 0.0, -3.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(78.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(77.0, 0.0, -3.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(18.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -27.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(78.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(87.0, 0.0, -15.5)",
+							"angle": 270
+						},
+						{
+							"position": "(77.0, 0.0, -31.5)",
+							"angle": 90
+						},
+						{
+							"position": "(87.0, 0.0, -28.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(99.5, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(92.0, 0.0, -15.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(38.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(35.0, 0.0, -27.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(50.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(72.0, 0.0, -31.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(38.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(40.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -42.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(54.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(57.0, 0.0, -41.5)",
+							"angle": 270
+						},
+						{
+							"position": "(50.5, 0.0, -40.0)",
+							"angle": 180
+						},
+						{
+							"position": "(47.0, 0.0, -55.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -41.5)",
+							"angle": 90
+						},
+						{
+							"position": "(70.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(72.0, 0.0, -44.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(39.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(42.0, 0.0, -55.5)",
+							"angle": 270
+						},
+						{
+							"position": "(40.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(70.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(70.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(39.5, 0.0, -63.0)",
+							"angle": 180
+						},
+						{
+							"position": "(42.0, 0.0, -65.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(70.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(54.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(52.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(47.0, 0.0, -65.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(25.0, 0.0, -42.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(78.0, 0.0, -44.0)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "FloodedBasement",
+			"names": [
+				"FB",
+				"D5"
+			],
+			"spawns": [
+				"FloodedBasementInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(99.0, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(92.0, 0.0, -29.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(18.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -3.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(34.0, 0.0, -3.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(71.0, 0.0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(85.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(77.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(6.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(18.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(21.5, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(42.0, 0.0, -16.5)",
+							"angle": 270
+						},
+						{
+							"position": "(33.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -16.5)",
+							"angle": 270
+						},
+						{
+							"position": "(49.0, 0.0, -16.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(87.0, 0.0, -18.0)",
+							"angle": 270
+						},
+						{
+							"position": "(62.0, 0.0, -16.5)",
+							"angle": 90
+						},
+						{
+							"position": "(85.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(87.0, 0.0, -29.5)",
+							"angle": 270
+						},
+						{
+							"position": "(82.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(66.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(99.0, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(92.0, 0.0, -18.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(21.5, 0.0, -31.0)",
+							"angle": 0
+						},
+						{
+							"position": "(21.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -28.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0.0, -26.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(36.5, 0.0, -32.0)",
+							"angle": 0
+						},
+						{
+							"position": "(33.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -28.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -42.5)",
+							"angle": 270
+						},
+						{
+							"position": "(21.5, 0.0, -38.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(33.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -42.5)",
+							"angle": 90
+						},
+						{
+							"position": "(42.0, 0.0, -41.5)",
+							"angle": 270
+						},
+						{
+							"position": "(36.5, 0.0, -38.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(48.0, 0.0, -41.5)",
+							"angle": 90
+						},
+						{
+							"position": "(52.5, 0.0, -38.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(69.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(66.5, 0.0, -38.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(82.5, 0.0, -38.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(33.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(69.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(48.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(52.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(52.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "PotassiumMine",
+			"names": [
+				"PM",
+				"D6"
+			],
+			"spawns": [
+				"PotassiumMineInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(41.0, 0.0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(55.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(47.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(18.5, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -15.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(40.5, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -15.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(55.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(53.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(64.0, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -40.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.0, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(18.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(20.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(53.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(40.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(43.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(33.0, 0.0, -29.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(67.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(64.0, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(72.0, 0.0, -27.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -27.5)",
+							"angle": 90
+						},
+						{
+							"position": "(84.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(17.0, 0.0, -40.5)",
+							"angle": 90
+						},
+						{
+							"position": "(20.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -41.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(34.0, 0.0, -60.5)",
+							"angle": 90
+						},
+						{
+							"position": "(36.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(54.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(57.0, 0.0, -55.5)",
+							"angle": 270
+						},
+						{
+							"position": "(57.0, 0.0, -64.5)",
+							"angle": 270
+						},
+						{
+							"position": "(32.0, 0.0, -41.5)",
+							"angle": 90
+						},
+						{
+							"position": "(43.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(57.0, 0.0, -39.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(67.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(67.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(72.0, 0.0, -40.0)",
+							"angle": 270
+						},
+						{
+							"position": "(62.0, 0.0, -39.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -55.5)",
+							"angle": 90
+						},
+						{
+							"position": "(84.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(77.0, 0.0, -40.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(10.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.0, 0.0, -51.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -60.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -53.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -55.5)",
+							"angle": 90
+						},
+						{
+							"position": "(67.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(72.0, 0.0, -55.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -64.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(36.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(42.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(54.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(47.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "BoilingGrave",
+			"names": [
+				"BG",
+				"D7"
+			],
+			"spawns": [
+				"BoilingGraveInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "V",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -78.5)",
+							"angle": 270
+						},
+						{
+							"position": "(3.5, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -18.5)",
+							"angle": 270
+						},
+						{
+							"position": "(12.0, 0.0, -3.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AA",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -4.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -3.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -4.5)",
+							"angle": 90
+						},
+						{
+							"position": "(42.0, 0.0, -4.5)",
+							"angle": 270
+						},
+						{
+							"position": "(40.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -4.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(71.0, 0.0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -5.5)",
+							"angle": 90
+						},
+						{
+							"position": "(81.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(18.0, 0.0, -18.5)",
+							"angle": 90
+						},
+						{
+							"position": "(26.0, 0.0, -18.5)",
+							"angle": 270
+						},
+						{
+							"position": "(19.5, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(34.0, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -18.5)",
+							"angle": 90
+						},
+						{
+							"position": "(40.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(41.0, 0.0, -19.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(50.0, 0.0, -19.5)",
+							"angle": 90
+						},
+						{
+							"position": "(68.0, 0.0, -19.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(79.0, 0.0, -19.5)",
+							"angle": 90
+						},
+						{
+							"position": "(81.5, 0.0, -15.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(19.5, 0.0, -26.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(34.0, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(34.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(34.5, 0.0, -39.0)",
+							"angle": 180
+						},
+						{
+							"position": "(37.5, 0.0, -44.0)",
+							"angle": 0
+						},
+						{
+							"position": "(52.5, 0.0, -44.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(22.0, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(37.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(57.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(52.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(67.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(63.0, 0.0, -53.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(25.0, 0.0, -65.5)",
+							"angle": 270
+						},
+						{
+							"position": "(22.0, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(3.5, 0.0, -69.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(33.0, 0.0, -65.5)",
+							"angle": 90
+						},
+						{
+							"position": "(37.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(42.0, 0.0, -65.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(57.0, 0.0, -65.5)",
+							"angle": 270
+						},
+						{
+							"position": "(52.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(48.0, 0.0, -65.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -65.5)",
+							"angle": 90
+						},
+						{
+							"position": "(67.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(67.5, 0.0, -68.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(26.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(18.0, 0.0, -78.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "X",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(37.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(33.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "Y",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(48.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(52.5, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Z",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(72.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(67.5, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "GrandLibrary",
+			"names": [
+				"GL",
+				"D8"
+			],
+			"spawns": [
+				"GrandLibraryInside",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(6.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(68.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(98.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -19.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(35.0, 0.0, -19.0)",
+							"angle": 90
+						},
+						{
+							"position": "(37.5, 0.0, -14.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(72.0, 0.0, -15.5)",
+							"angle": 270
+						},
+						{
+							"position": "(67.5, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(68.0, 0.0, -14.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -15.5)",
+							"angle": 90
+						},
+						{
+							"position": "(79.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(10.0, 0.0, -29.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(3.0, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(20.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(26.0, 0.0, -29.5)",
+							"angle": 270
+						},
+						{
+							"position": "(22.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(22.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(42.0, 0.0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(52.5, 0.0, -27.0)",
+							"angle": 180
+						},
+						{
+							"position": "(57.0, 0.0, -29.5)",
+							"angle": 270
+						},
+						{
+							"position": "(57.0, 0.0, -42.5)",
+							"angle": 270
+						},
+						{
+							"position": "(48.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(48.0, 0.0, -42.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(67.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(62.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(72.0, 0.0, -28.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(79.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(98.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(77.0, 0.0, -28.5)",
+							"angle": 90
+						},
+						{
+							"position": "(98.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(3.0, 0.0, -39.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(24.5, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(42.0, 0.0, -42.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -42.5)",
+							"angle": 90
+						},
+						{
+							"position": "(66.5, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(98.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(98.5, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "V",
+					"doors": [
+
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(24.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -52.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "X",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -52.5)",
+							"angle": 90
+						},
+						{
+							"position": "(37.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(38.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "Y",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Z",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(66.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(98.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(82.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(66.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(98.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AA",
+					"doors": [
+						{
+							"position": "(25, 0, -66.5)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AB",
+					"doors": [
+						{
+							"position": "(38.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AC",
+					"doors": [
+						{
+							"position": "(66.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AD",
+					"doors": [
+						{
+							"position": "(82.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AE",
+					"doors": [
+						{
+							"position": "(98.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "GrandLibrary2",
+			"names": [
+				"GL2",
+				"D82"
+			],
+			"spawns": [
+				"GrandLibrary2",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "BA",
+					"doors": [
+						{
+							"position": "(7.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "BB",
+					"doors": [
+						{
+							"position": "(7.5, 0.0, -14.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "CA",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CB",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CC",
+					"doors": [
+						{
+							"position": "(67.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CD",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -16.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CE",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -16.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CF",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -16.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CG",
+					"doors": [
+						{
+							"position": "(41.0, 0.0, -28.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CH",
+					"doors": [
+						{
+							"position": "(56.0, 0.0, -28.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CI",
+					"doors": [
+						{
+							"position": "(71.0, 0.0, -28.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CJ",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -40.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CK",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -40.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CL",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -40.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CM",
+					"doors": [
+						{
+							"position": "(41.0, 0.0, -52.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CN",
+					"doors": [
+						{
+							"position": "(56.0, 0.0, -52.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CO",
+					"doors": [
+						{
+							"position": "(71.0, 0.0, -52.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CP",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -64.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CQ",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -64.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CR",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -64.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CS",
+					"doors": [
+						{
+							"position": "(41.0, 0.0, -76.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CT",
+					"doors": [
+						{
+							"position": "(56.0, 0.0, -76.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CU",
+					"doors": [
+						{
+							"position": "(71.0, 0.0, -76.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CV",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -88.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CW",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -88.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "CX",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -88.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "DA",
+					"doors": [
+						{
+							"position": "(101.0, 0.0, -4.0)",
+							"angle": 0
+						},
+						{
+							"position": "(97.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "DB",
+					"doors": [
+						{
+							"position": "(93.0, 0.0, -16.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "DC",
+					"doors": [
+						{
+							"position": "(101.0, 0.0, -28.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "DD",
+					"doors": [
+						{
+							"position": "(93.0, 0.0, -40.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "DE",
+					"doors": [
+						{
+							"position": "(101.0, 0.0, -52.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "DF",
+					"doors": [
+						{
+							"position": "(93.0, 0.0, -64.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "DG",
+					"doors": [
+						{
+							"position": "(101.0, 0.0, -76.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "DH",
+					"doors": [
+						{
+							"position": "(93.0, 0.0, -88.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "EA",
+					"doors": [
+						{
+							"position": "(131.0, 0.0, -4.0)",
+							"angle": 0
+						},
+						{
+							"position": "(127.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "SunkenLabyrinth",
+			"names": [
+				"SL",
+				"S1"
+			],
+			"spawns": [
+				"SunkenLabyrinthInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(48.5, 0.0, -8.0)",
+							"angle": 0
+						},
+						{
+							"position": "(34.5, 0.0, -8.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -16.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(17.0, 0.0, -30.5)",
+							"angle": 90
+						},
+						{
+							"position": "(17.0, 0.0, -16.5)",
+							"angle": 90
+						},
+						{
+							"position": "(22.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -30.5)",
+							"angle": 270
+						},
+						{
+							"position": "(27.0, 0.0, -18.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(34.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -18.5)",
+							"angle": 90
+						},
+						{
+							"position": "(34.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(48.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(56.0, 0.0, -17.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -17.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -30.5)",
+							"angle": 270
+						},
+						{
+							"position": "(4.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -30.5)",
+							"angle": 90
+						},
+						{
+							"position": "(34.5, 0.0, -26.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -40.5)",
+							"angle": 270
+						},
+						{
+							"position": "(4.5, 0.0, -39.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -40.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -54.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -54.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -40.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -40.5)",
+							"angle": 90
+						},
+						{
+							"position": "(41.0, 0.0, -43.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -43.5)",
+							"angle": 270
+						},
+						{
+							"position": "(48.0, 0.0, -43.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -43.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -54.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(34.0, 0.0, -54.5)",
+							"angle": 90
+						},
+						{
+							"position": "(40.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -65.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(40.5, 0.0, -64.0)",
+							"angle": 180
+						},
+						{
+							"position": "(40.5, 0.0, -68.0)",
+							"angle": 0
+						},
+						{
+							"position": "(20.5, 0.0, -68.0)",
+							"angle": 0
+						},
+						{
+							"position": "(18.0, 0.0, -65.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -78.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(25.0, 0.0, -79.5)",
+							"angle": 270
+						},
+						{
+							"position": "(20.5, 0.0, -75.0)",
+							"angle": 180
+						},
+						{
+							"position": "(17.0, 0.0, -78.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(40.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -79.5)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "MachineFortress",
+			"names": [
+				"MF",
+				"S2"
+			],
+			"spawns": [
+				"MachineFortressInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -4.5)",
+							"angle": 270
+						},
+						{
+							"position": "(21.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -4.5)",
+							"angle": 90
+						},
+						{
+							"position": "(41.0, 0.0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(5.5, 0.0, -20.0)",
+							"angle": 0
+						},
+						{
+							"position": "(21.5, 0.0, -15.0)",
+							"angle": 180
+						},
+						{
+							"position": "(38.5, 0.0, -20.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(5.5, 0.0, -27.0)",
+							"angle": 180
+						},
+						{
+							"position": "(38.5, 0.0, -27.0)",
+							"angle": 180
+						},
+						{
+							"position": "(5.5, 0.0, -32.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(5.5, 0.0, -39.0)",
+							"angle": 180
+						},
+						{
+							"position": "(5.5, 0.0, -44.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(82.5, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(5.5, 0.0, -56.0)",
+							"angle": 0
+						},
+						{
+							"position": "(5.5, 0.0, -51.0)",
+							"angle": 180
+						},
+						{
+							"position": "(38.5, 0.0, -56.0)",
+							"angle": 0
+						},
+						{
+							"position": "(40.0, 0.0, -53.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(57.0, 0.0, -53.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(72.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(63.0, 0.0, -53.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(82.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(21.5, 0.0, -68.0)",
+							"angle": 0
+						},
+						{
+							"position": "(38.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(40.0, 0.0, -64.5)",
+							"angle": 270
+						},
+						{
+							"position": "(5.5, 0.0, -63.0)",
+							"angle": 180
+						},
+						{
+							"position": "(38.5, 0.0, -63.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(55.0, 0.0, -65.5)",
+							"angle": 270
+						},
+						{
+							"position": "(49.0, 0.0, -64.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -65.5)",
+							"angle": 90
+						},
+						{
+							"position": "(72.0, 0.0, -65.5)",
+							"angle": 270
+						},
+						{
+							"position": "(67.5, 0.0, -69.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(79.0, 0.0, -65.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(21.5, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(38.5, 0.0, -75.0)",
+							"angle": 180
+						},
+						{
+							"position": "(53.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(67.5, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "DarkHypostyle",
+			"names": [
+				"DH",
+				"S3"
+			],
+			"spawns": [
+				"DarkHypostyleInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(21.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -5.5)",
+							"angle": 270
+						},
+						{
+							"position": "(36.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -5.5)",
+							"angle": 270
+						},
+						{
+							"position": "(47.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(63.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -19.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(21.5, 0.0, -42.0)",
+							"angle": 0
+						},
+						{
+							"position": "(21.5, 0.0, -17.0)",
+							"angle": 180
+						},
+						{
+							"position": "(18.0, 0.0, -39.5)",
+							"angle": 90
+						},
+						{
+							"position": "(18.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(18.0, 0.0, -19.5)",
+							"angle": 90
+						},
+						{
+							"position": "(25.0, 0.0, -19.5)",
+							"angle": 270
+						},
+						{
+							"position": "(25.0, 0.0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -19.5)",
+							"angle": 270
+						},
+						{
+							"position": "(36.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -19.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -19.5)",
+							"angle": 90
+						},
+						{
+							"position": "(57.0, 0.0, -17.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(72.0, 0.0, -15.5)",
+							"angle": 270
+						},
+						{
+							"position": "(62.0, 0.0, -17.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -15.5)",
+							"angle": 90
+						},
+						{
+							"position": "(77.0, 0.0, -54.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -29.5)",
+							"angle": 270
+						},
+						{
+							"position": "(32.0, 0.0, -29.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(48.0, 0.0, -29.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -39.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.5, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -40.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -40.5)",
+							"angle": 90
+						},
+						{
+							"position": "(57.0, 0.0, -40.5)",
+							"angle": 270
+						},
+						{
+							"position": "(52.5, 0.0, -38.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -40.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(6.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(24.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(21.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(33.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(72.0, 0.0, -54.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "V",
+					"doors": [
+						{
+							"position": "(33.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(42.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "TombOfSimulacrum",
+			"names": [
+				"ToS",
+				"S4"
+			],
+			"spawns": [
+				"TombOfSimulacrumInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -7.5)",
+							"angle": 270
+						},
+						{
+							"position": "(10.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -7.5)",
+							"angle": 270
+						},
+						{
+							"position": "(21.0, 0.0, -7.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(35.0, 0.0, -7.5)",
+							"angle": 90
+						},
+						{
+							"position": "(36.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(42.0, 0.0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -5.5)",
+							"angle": 90
+						},
+						{
+							"position": "(52.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(72.0, 0.0, -3.5)",
+							"angle": 270
+						},
+						{
+							"position": "(63.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(78.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(77.0, 0.0, -3.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(97.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(10.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(12.0, 0.0, -19.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(17.0, 0.0, -19.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -19.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(34.0, 0.0, -19.5)",
+							"angle": 90
+						},
+						{
+							"position": "(36.5, 0.0, -17.0)",
+							"angle": 180
+						},
+						{
+							"position": "(42.0, 0.0, -16.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -16.5)",
+							"angle": 90
+						},
+						{
+							"position": "(52.5, 0.0, -15.0)",
+							"angle": 180
+						},
+						{
+							"position": "(52.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(63.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(64.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(78.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(87.0, 0.0, -19.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(97.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(92.0, 0.0, -19.5)",
+							"angle": 90
+						},
+						{
+							"position": "(99.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(18.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -29.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -29.5)",
+							"angle": 90
+						},
+						{
+							"position": "(37.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(52.5, 0.0, -26.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(64.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(72.0, 0.0, -30.5)",
+							"angle": 270
+						},
+						{
+							"position": "(67.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(72.0, 0.0, -41.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -30.5)",
+							"angle": 90
+						},
+						{
+							"position": "(97.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(82.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(99.5, 0.0, -26.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(7.5, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "V",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(22.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -41.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(37.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -41.5)",
+							"angle": 90
+						},
+						{
+							"position": "(42.0, 0.0, -43.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "X",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -45.0)",
+							"angle": 0
+						},
+						{
+							"position": "(52.5, 0.0, -39.0)",
+							"angle": 180
+						},
+						{
+							"position": "(48.0, 0.0, -43.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "Y",
+					"doors": [
+						{
+							"position": "(97.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(77.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(77.0, 0.0, -41.5)",
+							"angle": 90
+						},
+						{
+							"position": "(82.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(82.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(97.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "Z",
+					"doors": [
+						{
+							"position": "(7.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(12.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(7.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AA",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(22.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(19.0, 0.0, -53.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "AB",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(37.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(37.5, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AC",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(52.5, 0.0, -51.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AD",
+					"doors": [
+						{
+							"position": "(67.5, 0.0, -50.0)",
+							"angle": 180
+						},
+						{
+							"position": "(67.5, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(72.0, 0.0, -53.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AE",
+					"doors": [
+						{
+							"position": "(7.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(12.0, 0.0, -65.5)",
+							"angle": 270
+						},
+						{
+							"position": "(7.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AF",
+					"doors": [
+						{
+							"position": "(26.0, 0.0, -65.5)",
+							"angle": 270
+						},
+						{
+							"position": "(22.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(19.0, 0.0, -65.5)",
+							"angle": 90
+						},
+						{
+							"position": "(22.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AG",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -65.5)",
+							"angle": 90
+						},
+						{
+							"position": "(37.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(37.5, 0.0, -69.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AH",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(52.5, 0.0, -69.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AI",
+					"doors": [
+						{
+							"position": "(82.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(67.5, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(82.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AJ",
+					"doors": [
+						{
+							"position": "(97.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(97.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AK",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(7.5, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AL",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(18.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AM",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(37.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(33.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "AN",
+					"doors": [
+						{
+							"position": "(52.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(57.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(48.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "AO",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(72.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AP",
+					"doors": [
+						{
+							"position": "(82.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(77.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(87.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AQ",
+					"doors": [
+						{
+							"position": "(92.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(97.5, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "DreamForce",
+			"names": [
+				"WL",
+				"DW1"
+			],
+			"spawns": [
+				"DreamForceInside",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -5.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(51.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(36.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(64.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -18.5)",
+							"angle": 270
+						},
+						{
+							"position": "(22.5, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -18.5)",
+							"angle": 90
+						},
+						{
+							"position": "(41.0, 0.0, -20.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(51.5, 0.0, -22.0)",
+							"angle": 0
+						},
+						{
+							"position": "(47.0, 0.0, -20.5)",
+							"angle": 90
+						},
+						{
+							"position": "(56.0, 0.0, -20.5)",
+							"angle": 270
+						},
+						{
+							"position": "(51.5, 0.0, -15.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -20.5)",
+							"angle": 90
+						},
+						{
+							"position": "(72.0, 0.0, -20.5)",
+							"angle": 270
+						},
+						{
+							"position": "(64.5, 0.0, -15.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -20.5)",
+							"angle": 90
+						},
+						{
+							"position": "(83.5, 0.0, -34.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "Y",
+					"doors": [
+						{
+							"position": "(51.5, 0.0, -47.0)",
+							"angle": 0
+						},
+						{
+							"position": "(48.0, 0.0, -45.5)",
+							"angle": 90
+						},
+						{
+							"position": "(55.0, 0.0, -45.5)",
+							"angle": 270
+						},
+						{
+							"position": "(51.5, 0.0, -28.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -40.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "X",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -45.5)",
+							"angle": 270
+						},
+						{
+							"position": "(34.5, 0.0, -47.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "Z",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -45.5)",
+							"angle": 90
+						},
+						{
+							"position": "(64.5, 0.0, -47.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AA",
+					"doors": [
+						{
+							"position": "(83.5, 0.0, -40.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AE",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -56.5)",
+							"angle": 270
+						},
+						{
+							"position": "(34.5, 0.0, -53.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AF",
+					"doors": [
+						{
+							"position": "(51.5, 0.0, -53.0)",
+							"angle": 180
+						},
+						{
+							"position": "(47.0, 0.0, -56.5)",
+							"angle": 90
+						},
+						{
+							"position": "(56.0, 0.0, -56.5)",
+							"angle": 270
+						},
+						{
+							"position": "(51.5, 0.0, -60.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AG",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -56.5)",
+							"angle": 90
+						},
+						{
+							"position": "(64.5, 0.0, -53.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AH",
+					"doors": [
+						{
+							"position": "(79.0, 0.0, -58.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AD",
+					"doors": [
+						{
+							"position": "(51.5, 0.0, -66.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "DreamDynamite",
+			"names": [
+				"S",
+				"DW2"
+			],
+			"spawns": [
+				"DreamDynamiteInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(7.0, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(12.0, 0.0, -7.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -7.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -7.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(40.0, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(32.0, 0.0, -7.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(48.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(55.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(40.0, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(40.0, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(42.0, 0.0, -32.0)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(55.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(48.5, 0.0, -14.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(67.0, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(74.5, 0.0, -33.0)",
+							"angle": 0
+						},
+						{
+							"position": "(87.0, 0.0, -23.5)",
+							"angle": 270
+						},
+						{
+							"position": "(62.0, 0.0, -32.0)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(92.0, 0.0, -23.5)",
+							"angle": 90
+						},
+						{
+							"position": "(97.0, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -31.0)",
+							"angle": 180
+						},
+						{
+							"position": "(57.0, 0.0, -32.0)",
+							"angle": 270
+						},
+						{
+							"position": "(47.0, 0.0, -32.0)",
+							"angle": 90
+						},
+						{
+							"position": "(52.0, 0.0, -33.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "V",
+					"doors": [
+						{
+							"position": "(7.0, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(12.0, 0.0, -41.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -41.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -41.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "X",
+					"doors": [
+						{
+							"position": "(40.0, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -41.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "Y",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -40.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Z",
+					"doors": [
+						{
+							"position": "(74.5, 0.0, -38.0)",
+							"angle": 180
+						},
+						{
+							"position": "(74.5, 0.0, -45.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AB",
+					"doors": [
+						{
+							"position": "(97.0, 0.0, -40.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AF",
+					"doors": [
+						{
+							"position": "(52.0, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(52.0, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AG",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(67.0, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AH",
+					"doors": [
+						{
+							"position": "(82.0, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(82.0, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AI",
+					"doors": [
+						{
+							"position": "(97.0, 0.0, -57.0)",
+							"angle": 0
+						},
+						{
+							"position": "(97.0, 0.0, -50.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AL",
+					"doors": [
+						{
+							"position": "(37.0, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(42.0, 0.0, -65.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AM",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -65.5)",
+							"angle": 90
+						},
+						{
+							"position": "(57.0, 0.0, -65.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AN",
+					"doors": [
+						{
+							"position": "(67.0, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(67.0, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(67.0, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(67.0, 0.0, -62.0)",
+							"angle": 180
+						},
+						{
+							"position": "(67.0, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(62.0, 0.0, -65.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "AO",
+					"doors": [
+						{
+							"position": "(80.0, 0.0, -67.5)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AS",
+					"doors": [
+						{
+							"position": "(42.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(37.0, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AT",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(47.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "AU",
+					"doors": [
+						{
+							"position": "(62.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(67.0, 0.0, -74.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "DreamFireChain",
+			"names": [
+				"A",
+				"DW3"
+			],
+			"spawns": [
+				"DreamFireChainInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, 3.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(10.5, 0.0, -23.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -3.0)",
+							"angle": 180
+						},
+						{
+							"position": "(37.5, 0.0, -10.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(63.5, 0.0, -23.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -23.0)",
+							"angle": 0
+						},
+						{
+							"position": "(37.5, 0.0, -16.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(10.5, 0.0, -36.0)",
+							"angle": 0
+						},
+						{
+							"position": "(12.0, 0.0, -34.5)",
+							"angle": 270
+						},
+						{
+							"position": "(10.5, 0.0, -29.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(17.0, 0.0, -34.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -34.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -35.0)",
+							"angle": 0
+						},
+						{
+							"position": "(37.5, 0.0, -29.0)",
+							"angle": 180
+						},
+						{
+							"position": "(33.0, 0.0, -34.5)",
+							"angle": 90
+						},
+						{
+							"position": "(42.0, 0.0, -34.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -34.5)",
+							"angle": 270
+						},
+						{
+							"position": "(47.0, 0.0, -34.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(63.5, 0.0, -36.0)",
+							"angle": 0
+						},
+						{
+							"position": "(62.0, 0.0, -34.5)",
+							"angle": 90
+						},
+						{
+							"position": "(63.5, 0.0, -29.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(10.5, 0.0, -42.0)",
+							"angle": 180
+						},
+						{
+							"position": "(12.0, 0.0, -43.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(19.5, 0.0, -49.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -43.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -43.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, -42.0)",
+							"angle": 180
+						},
+						{
+							"position": "(37.5, 0.0, -49.0)",
+							"angle": 0
+						},
+						{
+							"position": "(42.0, 0.0, -43.5)",
+							"angle": 270
+						},
+						{
+							"position": "(33.0, 0.0, -43.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -43.5)",
+							"angle": 270
+						},
+						{
+							"position": "(47.0, 0.0, -43.5)",
+							"angle": 90
+						},
+						{
+							"position": "(54.5, 0.0, -49.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(63.5, 0.0, -42.0)",
+							"angle": 180
+						},
+						{
+							"position": "(62.0, 0.0, -43.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -58.5)",
+							"angle": 270
+						},
+						{
+							"position": "(19.5, 0.0, -55.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(41.0, 0.0, -58.5)",
+							"angle": 270
+						},
+						{
+							"position": "(34.0, 0.0, -58.5)",
+							"angle": 90
+						},
+						{
+							"position": "(37.5, 0.0, -55.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, -58.5)",
+							"angle": 90
+						},
+						{
+							"position": "(54.5, 0.0, -55.0)",
+							"angle": 180
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "DreamIce",
+			"names": [
+				"BT",
+				"DW4"
+			],
+			"spawns": [
+				"DreamIceInside",
+				"RestorePt1",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -4.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(27.0, 0.0, -4.5)",
+							"angle": 270
+						},
+						{
+							"position": "(18.0, 0.0, -4.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -4.5)",
+							"angle": 90
+						},
+						{
+							"position": "(39.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(64.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(83.5, 0.0, -9.0)",
+							"angle": 0
+						},
+						{
+							"position": "(84.0, 0.0, -5.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(99.5, 0.0, -9.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(11.0, 0.0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(4.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(19.0, 0.0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(26.0, 0.0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(22.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(33.0, 0.0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(39.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(39.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(71.0, 0.0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(64.5, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(64.5, 0.0, -14.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(87.0, 0.0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(83.5, 0.0, -14.0)",
+							"angle": 180
+						},
+						{
+							"position": "(81.5, 0.0, -21.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(93.0, 0.0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(99.5, 0.0, -21.0)",
+							"angle": 0
+						},
+						{
+							"position": "(99.5, 0.0, -14.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(4.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(10.0, 0.0, -30.5)",
+							"angle": 270
+						},
+						{
+							"position": "(7.0, 0.0, -30.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(22.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -30.5)",
+							"angle": 270
+						},
+						{
+							"position": "(18.0, 0.0, -30.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(39.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -30.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(64.5, 0.0, -26.0)",
+							"angle": 180
+						},
+						{
+							"position": "(64.0, 0.0, -30.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(87.0, 0.0, -30.5)",
+							"angle": 270
+						},
+						{
+							"position": "(81.5, 0.0, -26.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(99.5, 0.0, -27.0)",
+							"angle": 180
+						},
+						{
+							"position": "(93.0, 0.0, -30.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(8.0, 0.0, -53.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(18.0, 0.0, -63.5)",
+							"angle": 90
+						},
+						{
+							"position": "(18.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(18.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(27.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(27.0, 0.0, -63.5)",
+							"angle": 270
+						},
+						{
+							"position": "(21.0, 0.0, -53.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -53.5)",
+							"angle": 90
+						},
+						{
+							"position": "(41.5, 0.0, -57.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "V",
+					"doors": [
+						{
+							"position": "(87.0, 0.0, -53.5)",
+							"angle": 270
+						},
+						{
+							"position": "(64.5, 0.0, -69.0)",
+							"angle": 0
+						},
+						{
+							"position": "(65.0, 0.0, -53.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(92.0, 0.0, -53.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "X",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -63.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "Y",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -63.5)",
+							"angle": 90
+						},
+						{
+							"position": "(41.5, 0.0, -62.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "AA",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(6.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "Z",
+					"doors": [
+						{
+							"position": "(97.5, 0.0, -69.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AB",
+					"doors": [
+						{
+							"position": "(32.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "AC",
+					"doors": [
+						{
+							"position": "(64.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(63.0, 0.0, -77.5)",
+							"angle": 270
+						},
+						{
+							"position": "(72.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AD",
+					"doors": [
+						{
+							"position": "(79.0, 0.0, -77.5)",
+							"angle": 90
+						},
+						{
+							"position": "(85.0, 0.0, -77.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AE",
+					"doors": [
+						{
+							"position": "(97.5, 0.0, -74.0)",
+							"angle": 180
+						},
+						{
+							"position": "(93.0, 0.0, -77.5)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "DreamAll",
+			"names": [
+				"Q",
+				"DW5"
+			],
+			"spawns": [
+				"DreamAllInside",
+				"RestorePt1",
+				"RestorePt2",
+				"Fallback"
+			],
+			"rooms": [
+				{
+					"roomName": "A",
+					"doors": [
+						{
+							"position": "(12.0, 0.0, 4.5)",
+							"angle": 270
+						},
+						{
+							"position": "(10.5, 0.0, 3.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "B",
+					"doors": [
+						{
+							"position": "(37.5, 0.0, 3.0)",
+							"angle": 0
+						},
+						{
+							"position": "(41.0, 0.0, 4.5)",
+							"angle": 270
+						},
+						{
+							"position": "(34.0, 0.0, 4.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "C",
+					"doors": [
+						{
+							"position": "(63.5, 0.0, 3.0)",
+							"angle": 0
+						},
+						{
+							"position": "(62.0, 0.0, 4.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "D",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, 4.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, 4.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "E",
+					"doors": [
+						{
+							"position": "(47.0, 0.0, 4.5)",
+							"angle": 90
+						},
+						{
+							"position": "(57.0, 0.0, 4.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "F",
+					"doors": [
+						{
+							"position": "(10.5, 0.0, -3.0)",
+							"angle": 180
+						},
+						{
+							"position": "(10.5, 0.0, -10.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "G",
+					"doors": [
+						{
+							"position": "(25.5, 0.0, -10.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "H",
+					"doors": [
+						{
+							"position": "(35.5, 0.0, -10.0)",
+							"angle": 0
+						},
+						{
+							"position": "(37.5, 0.0, -3.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "I",
+					"doors": [
+						{
+							"position": "(55.5, 0.0, -10.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "J",
+					"doors": [
+						{
+							"position": "(63.5, 0.0, -3.0)",
+							"angle": 180
+						},
+						{
+							"position": "(63.5, 0.0, -10.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "K",
+					"doors": [
+						{
+							"position": "(-3.0, 0.0, -19.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "L",
+					"doors": [
+						{
+							"position": "(10.5, 0.0, -16.0)",
+							"angle": 180
+						},
+						{
+							"position": "(10.5, 0.0, -23.0)",
+							"angle": 0
+						},
+						{
+							"position": "(12.0, 0.0, -21.5)",
+							"angle": 270
+						},
+						{
+							"position": "(2.0, 0.0, -19.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "M",
+					"doors": [
+						{
+							"position": "(27.0, 0.0, -17.5)",
+							"angle": 270
+						},
+						{
+							"position": "(17.0, 0.0, -21.5)",
+							"angle": 90
+						},
+						{
+							"position": "(25.5, 0.0, -16.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "N",
+					"doors": [
+						{
+							"position": "(35.5, 0.0, -16.0)",
+							"angle": 180
+						},
+						{
+							"position": "(40.5, 0.0, -23.0)",
+							"angle": 0
+						},
+						{
+							"position": "(42.0, 0.0, -21.5)",
+							"angle": 270
+						},
+						{
+							"position": "(32.0, 0.0, -17.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "O",
+					"doors": [
+						{
+							"position": "(55.5, 0.0, -16.0)",
+							"angle": 180
+						},
+						{
+							"position": "(47.0, 0.0, -21.5)",
+							"angle": 90
+						},
+						{
+							"position": "(57.0, 0.0, -17.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "P",
+					"doors": [
+						{
+							"position": "(63.5, 0.0, -16.0)",
+							"angle": 180
+						},
+						{
+							"position": "(62.0, 0.0, -17.5)",
+							"angle": 90
+						},
+						{
+							"position": "(70.5, 0.0, -23.0)",
+							"angle": 0
+						},
+						{
+							"position": "(72.0, 0.0, -19.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "Q",
+					"doors": [
+						{
+							"position": "(77.0, 0.0, -19.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "R",
+					"doors": [
+						{
+							"position": "(10.5, 0.0, -36.0)",
+							"angle": 0
+						},
+						{
+							"position": "(10.5, 0.0, -29.0)",
+							"angle": 180
+						}
+					]
+				},
+				{
+					"roomName": "S",
+					"doors": [
+						{
+							"position": "(18.5, 0.0, -36.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "T",
+					"doors": [
+						{
+							"position": "(40.5, 0.0, -29.0)",
+							"angle": 180
+						},
+						{
+							"position": "(33.5, 0.0, -36.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "U",
+					"doors": [
+						{
+							"position": "(50.5, 0.0, -36.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "V",
+					"doors": [
+						{
+							"position": "(70.5, 0.0, -29.0)",
+							"angle": 180
+						},
+						{
+							"position": "(63.5, 0.0, -36.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "W",
+					"doors": [
+						{
+							"position": "(10.5, 0.0, -42.0)",
+							"angle": 180
+						},
+						{
+							"position": "(12.0, 0.0, -43.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "X",
+					"doors": [
+						{
+							"position": "(17.0, 0.0, -43.5)",
+							"angle": 90
+						},
+						{
+							"position": "(18.5, 0.0, -42.0)",
+							"angle": 180
+						},
+						{
+							"position": "(27.0, 0.0, -43.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "Y",
+					"doors": [
+						{
+							"position": "(39.5, 0.0, -49.0)",
+							"angle": 0
+						},
+						{
+							"position": "(42.0, 0.0, -47.5)",
+							"angle": 270
+						},
+						{
+							"position": "(33.5, 0.0, -42.0)",
+							"angle": 180
+						},
+						{
+							"position": "(32.0, 0.0, -43.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "Z",
+					"doors": [
+						{
+							"position": "(57.0, 0.0, -43.5)",
+							"angle": 270
+						},
+						{
+							"position": "(50.5, 0.0, -42.0)",
+							"angle": 180
+						},
+						{
+							"position": "(47.0, 0.0, -47.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "AA",
+					"doors": [
+						{
+							"position": "(63.5, 0.0, -42.0)",
+							"angle": 180
+						},
+						{
+							"position": "(62.0, 0.0, -43.5)",
+							"angle": 90
+						}
+					]
+				},
+				{
+					"roomName": "AB",
+					"doors": [
+						{
+							"position": "(22.0, 0.0, -59.0)",
+							"angle": 0
+						}
+					]
+				},
+				{
+					"roomName": "AC",
+					"doors": [
+						{
+							"position": "(39.5, 0.0, -55.0)",
+							"angle": 180
+						},
+						{
+							"position": "(42.0, 0.0, -60.5)",
+							"angle": 270
+						}
+					]
+				},
+				{
+					"roomName": "AD",
+					"doors": [
+						{
+							"position": "(48.0, 0.0, -60.5)",
+							"angle": 90
+						}
+					]
+				}
+			]
+		},
+		{
+			"scene": "MainMenu",
+			"names": [
+				"menu"
+			],
+			"spawns": [],
+			"rooms": [],
+			"doSave": "false"
+		},
+		{
+			"scene": "SplashScreen",
+			"names": [
+				"splash"
+			],
+			"spawns": [],
+			"rooms": [],
+			"doSave": "false"
+		},
+		{
+			"scene": "Intro",
+			"names": [],
+			"spawns": [],
+			"rooms": [],
+			"doSave": "false"
+		},
+		{
+			"scene": "Outro",
+			"names": [
+				"credits"
+			],
+			"spawns": [],
+			"rooms": [],
+			"doSave": "false"
+		},
+		{
+			"scene": "minigame_loader",
+			"names": [
+				"minigameloader",
+				"minigameload"
+			],
+			"spawns": [],
+			"rooms": [],
+			"doSave": "false"
+		},
+		{
+			"scene": "snobow_level",
+			"names": [
+				"snobow",
+				"duck",
+				"snowbow"
+			],
+			"spawns": [],
+			"rooms": [],
+			"doSave": "false"
+		},
+		{
+			"scene": "snobow_title",
+			"names": [
+				"snobowtitle",
+				"ducktitle",
+				"snowbowtitle"
+			],
+			"spawns": [],
+			"rooms": [],
+			"doSave": "false"
 		}
 	]
 }
