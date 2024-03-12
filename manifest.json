@@ -1,0 +1,15 @@
+{
+	"name": "DebugMenuCheats",
+	"description": "Various debug menu cheats",
+	"authors": [
+		"Chris is Awesome"
+	],
+	"version": "1.0.0",
+	"requires": [
+		"ModCore"
+	],
+	"conflicts": [
+
+	],
+	"github-url": "https://github.com/Extra-2-Dew/DebugMenuCheats"
+}
