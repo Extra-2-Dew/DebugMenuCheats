@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using ModCore;
 using SmallJson;
 using System;
 using System.Collections;
@@ -16,7 +17,6 @@ namespace DebugMenuCheats
 		private FadeEffectData sceneFadeData;
 		private FadeEffectData roomFadeData;
 		private const string dataFileName = "gotoData.json";
-
 		private GotoData gotoData;
 
 		[Cheat(commandName: "goto")]
@@ -157,8 +157,9 @@ namespace DebugMenuCheats
 
 		private void LoadScene(float fadeInTime = 1.25f)
 		{
+			DebugMenuManager.Instance.ToggleMenuVisibility();
 			sceneFadeData._fadeInTime = fadeInTime;
-			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, sceneFadeData, gotoData.doSave ? Plugin.DMC.Saver : null);
+			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, sceneFadeData);
 			sceneFadeData._fadeInTime = 1.25f;
 		}
 
@@ -170,12 +171,8 @@ namespace DebugMenuCheats
 			LevelRoom toRoom = LevelRoom.currentRooms.Find(x => x.RoomName == gotoData.roomName);
 			Vector3 position = gotoData.doorData.SpawnPosition;
 
-			// Hide menus
-			if (Plugin.DMC != null && Plugin.DMC.Menu != null)
-			{
-				Plugin.DMC.Menu.Hide();
-				Plugin.DMC.Menu.GetComponentInParent<PauseMenu>().Hide();
-			}
+			// Hide Debug Menu
+			DebugMenuManager.Instance.ToggleMenuVisibility();
 
 			if (roomFadeData == null)
 			{

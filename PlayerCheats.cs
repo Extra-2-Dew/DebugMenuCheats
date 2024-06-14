@@ -18,7 +18,7 @@ namespace DebugMenuCheats
 		{
 			if (args.Length > 0 && args[0] == "help")
 			{
-				DebugMenuCommands.Instance.UpdateOutput("Toggles invincibility for Ittle.\nYou will not receive damage or knockback, and can't void out.");
+				DebugMenuManager.Instance.UpdateOutput("Toggles invincibility for Ittle.\nYou will not receive damage or knockback, and can't void out.");
 				return;
 			}
 
@@ -31,7 +31,7 @@ namespace DebugMenuCheats
 				killable.CurrentHp = killable.MaxHp;
 			}
 
-			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!", godModeToggled ? "#6ed948" : "#d94343"));
+			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!", godModeToggled ? "#6ed948" : "#d94343"));
 		}
 
 		[Cheat(commandName: "noclip")]
@@ -39,14 +39,14 @@ namespace DebugMenuCheats
 		{
 			if (args.Length > 0 && args[0] == "help")
 			{
-				DebugMenuCommands.Instance.UpdateOutput("Toggles Ittle's main collider to disable her hitbox,\nallowing you to walk through walls.");
+				DebugMenuManager.Instance.UpdateOutput("Toggles Ittle's main collider to disable her hitbox,\nallowing you to walk through walls.");
 				return;
 			}
 
 			noClipToggled = !noClipToggled;
 			DoNoClip();
 
-			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
+			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
 		}
 
 		[Cheat(commandName: "likeaboss")]
@@ -54,12 +54,12 @@ namespace DebugMenuCheats
 		{
 			if (args.Length > 0 && args[0] == "help")
 			{
-				DebugMenuCommands.Instance.UpdateOutput("Toggles one hit kill mode for Ittle.\nEverything will die in one hit, including invincibile enemies");
+				DebugMenuManager.Instance.UpdateOutput("Toggles one hit kill mode for Ittle.\nEverything will die in one hit, including invincibile enemies");
 				return;
 			}
 
 			likeABossToggled = !likeABossToggled;
-			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? "#6ed948" : "#d94343"));
+			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? "#6ed948" : "#d94343"));
 		}
 
 		[Cheat(commandName: "setspeed", commandAliases: ["speed"])]
@@ -69,27 +69,27 @@ namespace DebugMenuCheats
 			{
 				if (args[0] == "help")
 				{
-					DebugMenuCommands.Instance.UpdateOutput("Set Ittle's speed multiplier. Requires a number");
+					DebugMenuManager.Instance.UpdateOutput("Set Ittle's speed multiplier. Requires a number");
 					return;
 				}
 
 				if (args[0] == "default" || args[0] == "reset" || args[0] == "def")
 				{
 					moveSpeedMultiplier = 1;
-					DebugMenuCommands.Instance.UpdateOutput($"Reset Ittle's speed multiplier");
+					DebugMenuManager.Instance.UpdateOutput($"Reset Ittle's speed multiplier");
 					return;
 				}
 
 				if (float.TryParse(args[0], out moveSpeedMultiplier))
 				{
-					DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", "#6ed948"));
+					DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", "#6ed948"));
 					return;
 				}
 
-				DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
+				DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
 			}
 
-			DebugMenuCommands.Instance.UpdateOutput(ModCore.Utility.ColorText("Must specify a number!", Color.red));
+			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText("Must specify a number!", Color.red));
 		}
 
 		private void DoNoClip()

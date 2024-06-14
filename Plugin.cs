@@ -17,7 +17,7 @@ namespace DebugMenuCheats
 
 		internal static Plugin Instance { get { return instance; } }
 		internal static ManualLogSource Log { get; private set; }
-		internal static DebugMenuCommands DMC { get { return DebugMenuCommands.Instance; } }
+		internal static DebugMenuManager DMC { get { return DebugMenuManager.Instance; } }
 
 		private void Awake()
 		{
@@ -25,7 +25,7 @@ namespace DebugMenuCheats
 			Log = Logger;
 			Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
 
-			DebugMenuCommands.OnDebugMenuInitialized += AddCommands;
+			DebugMenuManager.Instance.OnDebugMenuInitialized += AddCommands;
 			AddEventHooks();
 
 			Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
@@ -53,8 +53,8 @@ namespace DebugMenuCheats
 							instance = Activator.CreateInstance(type);
 
 						CheatAttribute cheat = (CheatAttribute)attributes[0];
-						DebugMenuCommands.CommandFunc commandDelegate = args => method.Invoke(instance, [args]);
-						DebugMenuCommands.Instance.AddCommand(cheat.CommandName, commandDelegate, cheat.CommandAliases);
+						DebugMenuManager.CommandHandler.CommandFunc commandDelegate = args => method.Invoke(instance, [args]);
+						DebugMenuManager.Instance.CommHandler.AddCommand(cheat.CommandName, commandDelegate, cheat.CommandAliases);
 					}
 				}
 			}
