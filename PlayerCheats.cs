@@ -7,11 +7,24 @@ namespace DebugMenuCheats
 	[HarmonyPatch]
 	public class PlayerCheats
 	{
-		private static float moveSpeedMultiplier = 1;
+		private const string greenColor = "#6ed948";
+		private const string redColor = "#d94343";
 
+		private static float moveSpeedMultiplier = 1;
 		private static bool godModeToggled;
 		private static bool noClipToggled;
 		private static bool likeABossToggled;
+
+		private bool TryGetPlayerEnt(out Entity player)
+		{
+			player = EntityTag.GetEntityByName("PlayerEnt");
+			return player != null;
+		}
+
+		private void LogNoIttleMessage()
+		{
+			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText("This requires Ittle to be present in the scene.", redColor));
+		}
 
 		[Cheat(commandName: "god", commandAliases: ["godmode"])]
 		private void ToggleGodMode(string[] args)
@@ -22,16 +35,22 @@ namespace DebugMenuCheats
 				return;
 			}
 
+			if (!TryGetPlayerEnt(out Entity player))
+			{
+				LogNoIttleMessage();
+				return;
+			}
+
 			godModeToggled = !godModeToggled;
 
 			if (godModeToggled)
 			{
 				// Restore health
-				Killable killable = EntityTag.GetEntityByName("PlayerEnt").GetEntityComponent<Killable>();
+				Killable killable = player.GetEntityComponent<Killable>();
 				killable.CurrentHp = killable.MaxHp;
 			}
 
-			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!", godModeToggled ? "#6ed948" : "#d94343"));
+			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!", godModeToggled ? greenColor : redColor));
 		}
 
 		[Cheat(commandName: "noclip")]
@@ -43,10 +62,16 @@ namespace DebugMenuCheats
 				return;
 			}
 
-			noClipToggled = !noClipToggled;
-			DoNoClip();
+			if (!TryGetPlayerEnt(out Entity player))
+			{
+				LogNoIttleMessage();
+				return;
+			}
 
-			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
+			noClipToggled = !noClipToggled;
+			DoNoClip(player);
+
+			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? greenColor : redColor));
 		}
 
 		[Cheat(commandName: "likeaboss")]
@@ -58,51 +83,62 @@ namespace DebugMenuCheats
 				return;
 			}
 
+			if (!TryGetPlayerEnt(out Entity player))
+			{
+				LogNoIttleMessage();
+				return;
+			}
+
 			likeABossToggled = !likeABossToggled;
-			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? "#6ed948" : "#d94343"));
+			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? greenColor : redColor));
 		}
 
 		[Cheat(commandName: "setspeed", commandAliases: ["speed"])]
 		private void SetMoveSpeed(string[] args)
 		{
-			if (args.Length > 0)
+			if (args.Length < 1)
 			{
-				if (args[0] == "help")
-				{
-					DebugMenuManager.Instance.UpdateOutput("Set Ittle's speed multiplier. Requires a number");
-					return;
-				}
-
-				if (args[0] == "default" || args[0] == "reset" || args[0] == "def")
-				{
-					moveSpeedMultiplier = 1;
-					DebugMenuManager.Instance.UpdateOutput($"Reset Ittle's speed multiplier");
-					return;
-				}
-
-				if (float.TryParse(args[0], out moveSpeedMultiplier))
-				{
-					DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", "#6ed948"));
-					return;
-				}
-
-				DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? "#6ed948" : "#d94343"));
+				DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText("Must specify a number!", redColor));
+				return;
 			}
 
-			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText("Must specify a number!", Color.red));
+			if (!TryGetPlayerEnt(out Entity player))
+			{
+				LogNoIttleMessage();
+				return;
+			}
+
+			if (args[0] == "help")
+			{
+				DebugMenuManager.Instance.UpdateOutput("Set Ittle's speed multiplier. Requires a number");
+				return;
+			}
+
+			if (args[0] == "default" || args[0] == "reset" || args[0] == "def")
+			{
+				moveSpeedMultiplier = 1;
+				DebugMenuManager.Instance.UpdateOutput($"Reset Ittle's speed multiplier");
+				return;
+			}
+
+			if (float.TryParse(args[0], out moveSpeedMultiplier))
+			{
+				DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", greenColor));
+				return;
+			}
 		}
 
-		private void DoNoClip()
+		private void DoNoClip(Entity player)
 		{
 			// Disable Ittle's hitbox
-			EntityTag.GetEntityByName("PlayerEnt").GetComponent<BC_ColliderAACylinderN>().IsTrigger = noClipToggled;
+			player.GetComponent<BC_ColliderAACylinderN>().IsTrigger = noClipToggled;
 		}
 
 		#region Events
 
-		public void OnPlayerSpawn(Entity player, UnityEngine.GameObject camera, PlayerController controller)
+		public void OnPlayerSpawn(Entity player, GameObject camera, PlayerController controller)
 		{
-			DoNoClip();
+			DoNoClip(player);
 		}
 
 		#endregion Events
