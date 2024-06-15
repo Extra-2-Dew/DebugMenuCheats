@@ -8318,6 +8318,8 @@
 		{
 			"scene": "DreamForce",
 			"names": [
+				"WizardryLab",
+				"Wizardry",
 				"WL",
 				"DW1"
 			],
@@ -8569,6 +8571,7 @@
 		{
 			"scene": "DreamDynamite",
 			"names": [
+				"Syncope",
 				"S",
 				"DW2"
 			],
@@ -8971,6 +8974,7 @@
 		{
 			"scene": "DreamFireChain",
 			"names": [
+				"Antigram",
 				"A",
 				"DW3"
 			],
@@ -9243,6 +9247,7 @@
 		{
 			"scene": "DreamIce",
 			"names": [
+				"BottomlessTower",
 				"BT",
 				"DW4"
 			],
@@ -9700,6 +9705,7 @@
 		{
 			"scene": "DreamAll",
 			"names": [
+				"Quietus",
 				"Q",
 				"DW5"
 			],
