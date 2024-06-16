@@ -7,7 +7,8 @@ namespace DebugMenuCheats
 	[HarmonyPatch]
 	public class PlayerCheats
 	{
-		private const string greenColor = "#6ed948";
+		private const string defaultColor = "#000000";
+		private const string greenColor = "#539a39";
 		private const string redColor = "#d94343";
 
 		private static float moveSpeedMultiplier = 1;
@@ -23,7 +24,13 @@ namespace DebugMenuCheats
 
 		private void LogNoIttleMessage()
 		{
-			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText("This requires Ittle to be present in the scene.", redColor));
+			LogToConsole("This requires Ittle to be present in the scene.", redColor);
+		}
+
+		private void LogToConsole(string message, string color = defaultColor)
+		{
+			string output = ModCore.Utility.ColorText(message, color);
+			DebugMenuManager.Instance.UpdateOutput(output);
 		}
 
 		[Cheat(commandName: "god", commandAliases: ["godmode"])]
@@ -31,7 +38,7 @@ namespace DebugMenuCheats
 		{
 			if (args.Length > 0 && args[0] == "help")
 			{
-				DebugMenuManager.Instance.UpdateOutput("Toggles invincibility for Ittle.\nYou will not receive damage or knockback, and can't void out.");
+				LogToConsole("Toggles invincibility for Ittle.\nYou will not receive damage or knockback, and can't void out.");
 				return;
 			}
 
@@ -50,7 +57,7 @@ namespace DebugMenuCheats
 				killable.CurrentHp = killable.MaxHp;
 			}
 
-			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!", godModeToggled ? greenColor : redColor));
+			LogToConsole($"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!", godModeToggled ? greenColor : redColor);
 		}
 
 		[Cheat(commandName: "noclip")]
@@ -58,7 +65,7 @@ namespace DebugMenuCheats
 		{
 			if (args.Length > 0 && args[0] == "help")
 			{
-				DebugMenuManager.Instance.UpdateOutput("Toggles Ittle's main collider to disable her hitbox,\nallowing you to walk through walls.");
+				LogToConsole("Toggles Ittle's main collider to disable her hitbox,\nallowing you to walk through walls.");
 				return;
 			}
 
@@ -71,7 +78,7 @@ namespace DebugMenuCheats
 			noClipToggled = !noClipToggled;
 			DoNoClip(player);
 
-			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? greenColor : redColor));
+			LogToConsole($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? greenColor : redColor);
 		}
 
 		[Cheat(commandName: "likeaboss")]
@@ -79,7 +86,7 @@ namespace DebugMenuCheats
 		{
 			if (args.Length > 0 && args[0] == "help")
 			{
-				DebugMenuManager.Instance.UpdateOutput("Toggles one hit kill mode for Ittle.\nEverything will die in one hit, including invincibile enemies");
+				LogToConsole("Toggles one hit kill mode for Ittle.\nEverything will die in one hit, including invincibile enemies");
 				return;
 			}
 
@@ -90,7 +97,7 @@ namespace DebugMenuCheats
 			}
 
 			likeABossToggled = !likeABossToggled;
-			DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? greenColor : redColor));
+			LogToConsole($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? greenColor : redColor);
 		}
 
 		[Cheat(commandName: "setspeed", commandAliases: ["speed"])]
@@ -98,7 +105,7 @@ namespace DebugMenuCheats
 		{
 			if (args.Length < 1)
 			{
-				DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText("Must specify a number!", redColor));
+				LogToConsole("Must specify a number!", redColor);
 				return;
 			}
 
@@ -110,20 +117,20 @@ namespace DebugMenuCheats
 
 			if (args[0] == "help")
 			{
-				DebugMenuManager.Instance.UpdateOutput("Set Ittle's speed multiplier. Requires a number");
+				LogToConsole("Set Ittle's speed multiplier. Requires a number");
 				return;
 			}
 
 			if (args[0] == "default" || args[0] == "reset" || args[0] == "def")
 			{
 				moveSpeedMultiplier = 1;
-				DebugMenuManager.Instance.UpdateOutput($"Reset Ittle's speed multiplier");
+				LogToConsole($"Reset Ittle's speed multiplier");
 				return;
 			}
 
 			if (float.TryParse(args[0], out moveSpeedMultiplier))
 			{
-				DebugMenuManager.Instance.UpdateOutput(ModCore.Utility.ColorText($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", greenColor));
+				LogToConsole($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", greenColor);
 				return;
 			}
 		}
