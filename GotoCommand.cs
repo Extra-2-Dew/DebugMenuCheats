@@ -159,7 +159,7 @@ namespace DebugMenuCheats
 		{
 			DebugMenuManager.Instance.ToggleMenuVisibility();
 			sceneFadeData._fadeInTime = fadeInTime;
-			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, sceneFadeData);
+			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, sceneFadeData, gotoData.doSave ? ModCore.Plugin.MainSaver : null);
 			sceneFadeData._fadeInTime = 1.25f;
 		}
 
