@@ -1,3 +1,3 @@
 # Debug Menu Cheats
 
-TODO
+This mod adds several cheat commands
