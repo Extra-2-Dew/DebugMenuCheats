@@ -1,5 +1,8 @@
 ﻿using HarmonyLib;
 using ModCore;
+using SmallJson;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace DebugMenuCheats
@@ -11,6 +14,7 @@ namespace DebugMenuCheats
 		private const string greenColor = "#539a39";
 		private const string redColor = "#d94343";
 
+		private List<ItemData> itemData;
 		private static float moveSpeedMultiplier = 1;
 		private static bool godModeToggled;
 		private static bool noClipToggled;
@@ -135,10 +139,146 @@ namespace DebugMenuCheats
 			}
 		}
 
+		[Cheat(commandName: "setitems", commandAliases: ["setitem", "giveitems"])]
+		private void SetItems(string[] args)
+		{
+			if (!TryGetPlayerEnt(out Entity player))
+			{
+				LogNoIttleMessage();
+				return;
+			}
+
+			if (itemData == null)
+				ParseItemDataJson();
+
+			if (itemData == null || itemData.Count == 0)
+			{
+				Plugin.Log.LogError("Failed to parse JSON data for items");
+				return;
+			}
+
+			if (args.Length == 0)
+			{
+				LogToConsole("Command requires at least 1 argument.", redColor);
+				return;
+			}
+
+			// Args
+			string itemName = args[0];
+			int itemLevel;
+			bool doSave = !args.Any(arg => arg == "--no-save");
+
+			// Handle melee item names
+			switch (itemName)
+			{
+				case "none":
+					foreach (ItemData item in itemData)
+						player.SetStateVariable(item.ItemName, 0);
+
+					if (doSave)
+						ModCore.Plugin.MainSaver.SaveAll();
+
+					return;
+				case "all":
+					foreach (ItemData item in itemData)
+					{
+						switch (item.ItemName)
+						{
+							case "raft":
+							case "shards":
+							case "evilKeys":
+							case "keys":
+								player.SetStateVariable(item.ItemName, item.MaxLevel);
+								break;
+							default:
+								player.SetStateVariable(item.ItemName, 3);
+								break;
+						}
+					}
+
+					if (doSave)
+						ModCore.Plugin.MainSaver.SaveAll();
+
+					return;
+				case "dev":
+					foreach (ItemData item in itemData)
+						player.SetStateVariable(item.ItemName, item.MaxLevel);
+
+					if (doSave)
+						ModCore.Plugin.MainSaver.SaveAll();
+
+					return;
+				case "stick":
+					itemName = "melee";
+					itemLevel = 0;
+					break;
+				case "firesword":
+				case "sword":
+					itemName = "melee";
+					itemLevel = 1;
+					break;
+				case "firemace":
+				case "mace":
+					itemName = "melee";
+					itemLevel = 2;
+					break;
+				case "efcs":
+					itemName = "melee";
+					itemLevel = 3;
+					break;
+				default:
+					itemLevel = args.Length > 1 && int.TryParse(args[1], out itemLevel) ? itemLevel : -1;
+					break;
+			}
+
+			ItemData selectedItem = itemData.Find(x => x.ItemName.ToLower() == itemName || x.Aliases.Contains(itemName));
+
+			if (selectedItem == null)
+			{
+				LogToConsole($"'{itemName}' was not a valid item name.", redColor);
+				return;
+			}
+
+			if (itemLevel < 0 || itemLevel > selectedItem.MaxLevel)
+			{
+				LogToConsole($"Level is required and must be an number (integer) between 0 and {selectedItem.MaxLevel}.", redColor);
+				return;
+			}
+
+			player.SetStateVariable(selectedItem.ItemName, itemLevel);
+
+			if (doSave)
+				ModCore.Plugin.MainSaver.SaveAll();
+		}
+
 		private void DoNoClip(Entity player)
 		{
 			// Disable Ittle's hitbox
 			player.GetComponent<BC_ColliderAACylinderN>().IsTrigger = noClipToggled;
+		}
+
+		private void ParseItemDataJson()
+		{
+			if (!ModCore.Utility.TryParseJson(PluginInfo.PLUGIN_NAME, "Data", "itemData.json", out JsonObject rootObj))
+				return;
+
+			itemData = new List<ItemData>();
+
+			foreach (JsonObject itemObj in rootObj.GetArray("items").objects.Cast<JsonObject>())
+			{
+				string itemName = itemObj.GetString("itemName");
+				List<string> aliases = new();
+				int maxLevel = itemObj.GetInt("maxLevel");
+
+				JsonArray aliasArray = itemObj.GetArray("aliases") ?? new();
+				for (int i = 0; i < aliasArray.Length; i++)
+				{
+					JsonValue alias = (JsonValue)aliasArray.objects[i];
+					aliases.Add(alias.GetValue());
+				}
+
+				itemData.Add(new ItemData(itemName, aliases, maxLevel));
+			}
 		}
 
 		#region Events
@@ -220,5 +360,18 @@ namespace DebugMenuCheats
 		}
 
 		#endregion Patches
+		public class ItemData
+		{
+			public string ItemName { get; }
+			public List<string> Aliases { get; }
+			public int MaxLevel { get; }
+
+			public ItemData(string itemName, List<string> aliases, int maxLevel)
+			{
+				ItemName = itemName;
+				Aliases = aliases ?? new();
+				MaxLevel = maxLevel;
+			}
+		}
 	}
 }

@@ -1,0 +1,84 @@
+{
+	"items": [
+		{
+			"itemName": "melee",
+			"maxLevel": 3
+		},
+		{
+			"itemName": "forcewand",
+			"aliases": [
+				"force",
+				"wand"
+			],
+			"maxLevel": 4
+		},
+		{
+			"itemName": "dynamite",
+			"aliases": [
+				"dyna"
+			],
+			"maxLevel": 4
+		},
+		{
+			"itemName": "icering",
+			"aliases": [
+				"ice",
+				"ring"
+			],
+			"maxLevel": 4
+		},
+		{
+			"itemName": "raft",
+			"maxLevel": 8
+		},
+		{
+			"itemName": "shards",
+			"aliases": [
+				"secretshards"
+			],
+			"maxLevel": 24
+		},
+		{
+			"itemName": "keys",
+			"aliases": [
+				"lockpicks",
+				"lockpick",
+				"key"
+			],
+			"maxLevel": 99
+		},
+		{
+			"itemName": "evilKeys",
+			"aliases": [
+				"forbiddenkeys",
+				"evilkey",
+				"forbiddenkey"
+			],
+			"maxLevel": 4
+		},
+		{
+			"itemName": "headband",
+			"maxLevel": 3
+		},
+		{
+			"itemName": "tome",
+			"maxLevel": 3
+		},
+		{
+			"itemName": "amulet",
+			"maxLevel": 3
+		},
+		{
+			"itemName": "chain",
+			"maxLevel": 3
+		},
+		{
+			"itemName": "tracker",
+			"maxLevel": 3
+		},
+		{
+			"itemName": "loot",
+			"maxLevel": 1
+		}
+	]
+}

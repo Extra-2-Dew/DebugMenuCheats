@@ -31,6 +31,10 @@
 		</Reference>
 		
 		<None Include="DebugMenuCheats.csproj.user" />
+		
+		<None Update="Data\itemData.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 
 		<None Update="manifest.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
