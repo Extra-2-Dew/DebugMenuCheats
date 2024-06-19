@@ -40,12 +40,6 @@ namespace DebugMenuCheats
 		[Cheat(commandName: "god", commandAliases: ["godmode"])]
 		private void ToggleGodMode(string[] args)
 		{
-			if (args.Length > 0 && args[0] == "help")
-			{
-				LogToConsole("Toggles invincibility for Ittle.\nYou will not receive damage or knockback, and can't void out.");
-				return;
-			}
-
 			if (!TryGetPlayerEnt(out Entity player))
 			{
 				LogNoIttleMessage();
@@ -67,12 +61,6 @@ namespace DebugMenuCheats
 		[Cheat(commandName: "noclip")]
 		private void ToggleNoClip(string[] args)
 		{
-			if (args.Length > 0 && args[0] == "help")
-			{
-				LogToConsole("Toggles Ittle's main collider to disable her hitbox,\nallowing you to walk through walls.");
-				return;
-			}
-
 			if (!TryGetPlayerEnt(out Entity player))
 			{
 				LogNoIttleMessage();
@@ -88,12 +76,6 @@ namespace DebugMenuCheats
 		[Cheat(commandName: "likeaboss")]
 		private void ToggleLikeABoss(string[] args)
 		{
-			if (args.Length > 0 && args[0] == "help")
-			{
-				LogToConsole("Toggles one hit kill mode for Ittle.\nEverything will die in one hit, including invincibile enemies");
-				return;
-			}
-
 			if (!TryGetPlayerEnt(out Entity player))
 			{
 				LogNoIttleMessage();
@@ -107,36 +89,20 @@ namespace DebugMenuCheats
 		[Cheat(commandName: "setspeed", commandAliases: ["speed"])]
 		private void SetMoveSpeed(string[] args)
 		{
-			if (args.Length < 1)
-			{
-				LogToConsole("Must specify a number!", redColor);
-				return;
-			}
-
 			if (!TryGetPlayerEnt(out Entity player))
 			{
 				LogNoIttleMessage();
 				return;
 			}
 
-			if (args[0] == "help")
-			{
-				LogToConsole("Set Ittle's speed multiplier. Requires a number");
-				return;
-			}
-
-			if (args[0] == "default" || args[0] == "reset" || args[0] == "def")
+			if (args.Length < 1 || !float.TryParse(args[0], out moveSpeedMultiplier))
 			{
 				moveSpeedMultiplier = 1;
-				LogToConsole($"Reset Ittle's speed multiplier");
+				LogToConsole("Must specify a number!", redColor);
 				return;
 			}
 
-			if (float.TryParse(args[0], out moveSpeedMultiplier))
-			{
-				LogToConsole($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", greenColor);
-				return;
-			}
+			LogToConsole($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", greenColor);
 		}
 
 		[Cheat(commandName: "setitems", commandAliases: ["setitem", "giveitems"])]
@@ -351,7 +317,12 @@ namespace DebugMenuCheats
 					__instance.realBody.SetVelocity(V * moveSpeedMultiplier);
 				}
 				else
-					__instance.realTrans.position += V * moveSpeedMultiplier * Time.deltaTime;
+				{
+					if (moveSpeedMultiplier == 1)
+						__instance.realTrans.position += V * Time.deltaTime;
+					else
+						__instance.realTrans.position += V * moveSpeedMultiplier * Time.deltaTime;
+				}
 
 				return false;
 			}
@@ -360,6 +331,7 @@ namespace DebugMenuCheats
 		}
 
 		#endregion Patches
+
 		public class ItemData
 		{
 			public string ItemName { get; }
