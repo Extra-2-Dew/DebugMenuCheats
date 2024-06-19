@@ -16,12 +16,16 @@ This mod adds several cheat commands
 ### Player Cheats
 Player cheats require Ittle to be present in the scene.
 
+___
+
 <details id="god">
 <summary><b>god</b></summary>
 
 **Alias(es):**
 - `godmode`
 </details>
+
+___
 
 <details id="setspeed">
 <summary><b>setspeed</b></summary>
@@ -40,6 +44,8 @@ Player cheats require Ittle to be present in the scene.
 - `speed 1` will reset Ittle's speed to default
 - `speed -1` will reverse Ittle's movement directions
 </details>
+
+___
 
 <details id="setitems">
 <summary><b>setitems</b></summary>
@@ -67,3 +73,5 @@ Player cheats require Ittle to be present in the scene.
 - `giveitems all` will give you all items at max (non-dev) level/counts
 - `setitems dev --no-save` will give you all items at max level/counts, but it won't save them
 </details>
+
+___
