@@ -1,19 +1,20 @@
-# Debug Menu Cheats
+﻿# Debug Menu Cheats
 
 This mod adds several cheat commands
 
 ## Commands List
-| Command Name                  | Description |
-| ----------------------------- | ----------- |
-| [god](#god)                   | Toggles invincibility for Ittle. You will not receive damage or knockback, and won't be able to void out.
-| likeaboss                     | Toggles one-hit-kill mode for Ittle. Everything you hit will die in one hit, including some invincible enemies.
-| noclip                        | Toggle's Ittle's hitbox. While her hitbox is disabled, you can walk through walls.
+| Command Name          | Description |
+| --------------------- | ----------- |
+| [god](#god)           | Toggles invincibility for Ittle. You will not receive damage or knockback, and won't be able to void out.
+| likeaboss             | Toggles one-hit-kill mode for Ittle. Everything you hit will die in one hit, including some invincible enemies.
+| noclip                | Toggle's Ittle's hitbox. While her hitbox is disabled, you can walk through walls.
 | [setspeed](#setspeed) | Set Ittle's movement speed
-| [setitems](#setitems)         | Give yourself items
+| [setitems](#setitems) | Give yourself items
+| [goto](#goto)         | Instantly teleport to any scene, room, or spawn point your heart desires
 
 ## Command Documentation
 
-### Player Cheats
+### Player Commands
 Player cheats require Ittle to be present in the scene.
 
 ___
@@ -76,7 +77,7 @@ ___
 <details>
 <summary>Accepted values</summary>
 
-| Item name | Aliase(s)        | Level/Count Range |
+| Item name | Alias(es)        | Level/Count Range |
 | --------- | ---------------- | ----------------- |
 | stick     |                  |                   |
 | firesword | sword            |                   |
@@ -97,6 +98,38 @@ ___
 | tracker   |                  | 0-3               |
 | loot      |                  | 0-1               |
 </details>
+</details>
+
+___
+
+### Non-Player Commands
+These commands will work anywhere, regardless of if Ittle is present
+
+___
+
+<details id="goto">
+<summary><b>goto</b></summary>
+
+**Argument(s):**
+
+| Index | Type        | Conditional | Explanation |
+| ----- | ----------- | ----------- | ----------- |
+| 0     | text        |             | The name or alias for the scene
+| 1     | text/number |             | The name of the spawn, room, or the 0-based index position for the spawn point
+| 2     | number      | ✔          | (If room is given for arg 1) The 0-based index for the door within the room. If not given, door will default to index 0
+
+**Flag(s):**
+
+| Flag        | Explanation |
+| ----------- | ----------- |
+| `--no-save` | Don't save the items to the save file automatically.
+
+**Examples:**
+- `goto fluffy restorept1`: Warps to Fluffy Fields checkpoint
+- `goto ff c`: Warps to Fluffy Fields room C
+- `goto ff`: Warps to Fluffy Fields' first spawn in list (checkpoint)
+- `goto fluffyfields b 1`: Warps to Fluffy Fields room B at the 2nd door in the room
+
 </details>
 
 ___
