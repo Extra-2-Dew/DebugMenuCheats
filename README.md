@@ -72,6 +72,31 @@ ___
 - `giveitems melee 0` will give you Stick
 - `giveitems all` will give you all items at max (non-dev) level/counts
 - `setitems dev --no-save` will give you all items at max level/counts, but it won't save them
+
+<details>
+<summary>Accepted values</summary>
+
+| Item name | Aliase(s)        | Level/Count Range |
+| --------- | ---------------- | ----------------- |
+| stick     |                  |                   |
+| firesword | sword            |                   |
+| firemace  | mace             |                   |
+| efcs      |                  |                   |
+| melee     |                  | 0-3               |
+| forcewand | force, wand      | 0-4               |
+| dynamite  | dyna             | 0-4               |
+| icering   | ice, ring        | 0-4               |
+| raft      |                  | 0-8               |
+| shards    | secretshards     | 0-24              |
+| keys      | lockpicks, picks | 0-99              |
+| evilkeys  | forbiddenkeys    | 0-4               |
+| headband  |                  | 0-3               |
+| tome      |                  | 0-3               |
+| amulet    |                  | 0-3               |
+| chain     |                  | 0-3               |
+| tracker   |                  | 0-3               |
+| loot      |                  | 0-1               |
+</details>
 </details>
 
 ___
