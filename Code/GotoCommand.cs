@@ -19,22 +19,17 @@ namespace DebugMenuCheats
 		private const string dataFileName = "gotoData.json";
 		private GotoData gotoData;
 
-		[Cheat(commandName: "goto")]
+		[DebugMenuCommand(commandName: "goto")]
 		private void Goto(string[] args)
 		{
 			gotoData = new();
+			string output;
 
 			// If no args given
 			if (args == null || args.Length < 1)
 			{
-				Plugin.DMC.UpdateOutput(ModCore.Utility.ColorText("Must specify a scene name to be your destination!", Color.red));
-				return;
-			}
-
-			// If help
-			if (args[0] == "help")
-			{
-				Plugin.DMC.UpdateOutput("Warps to the given sceneArg at the given spawnOrRoomArg point");
+				output = "Must specify a scene name to be your destination!";
+				DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 				return;
 			}
 
@@ -44,7 +39,8 @@ namespace DebugMenuCheats
 				// If failed to parson JSON
 				if (!TryParseJson(out JsonObject rootObj))
 				{
-					Plugin.DMC.UpdateOutput(ModCore.Utility.ColorText("The JSON failed to parse. Does the JSON file exist?", Color.red));
+					output = "Something went wrong with the parsing of the goto data JSON! Please report this!";
+					DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 					Plugin.Log.LogError("Goto command failed to parse its JSON data file. Does it exist?");
 					return;
 				}
@@ -57,7 +53,8 @@ namespace DebugMenuCheats
 			// If scene is invalid
 			if (!TryValidateScene(sceneArg, allSceneData, out SceneData sceneData))
 			{
-				Plugin.DMC.UpdateOutput(ModCore.Utility.ColorText($"There is no scene with the name '{sceneArg}'. A typo perhaps?", Color.red));
+				output = $"There is no scene with the name '{sceneArg}'. A typo perhaps?";
+				DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 				return;
 			}
 
@@ -113,7 +110,8 @@ namespace DebugMenuCheats
 									gotoData.doorData = room.Doors[doorIndex];
 								else
 								{
-									Plugin.DMC.UpdateOutput(ModCore.Utility.ColorText($"Door index {args[2]} is out of range for room {gotoData.roomName}.\nThere are {room.Doors.Count} doors in this room.", Color.red));
+									output = $"Door index {args[2]} is out of range for room {gotoData.roomName}.\nThere are {room.Doors.Count} doors in this room.";
+									DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 									return;
 								}
 							}
@@ -124,7 +122,8 @@ namespace DebugMenuCheats
 				// If no spawn or room found, it's invalid
 				if (string.IsNullOrEmpty(gotoData.spawnName) && string.IsNullOrEmpty(gotoData.roomName))
 				{
-					Plugin.DMC.UpdateOutput(ModCore.Utility.ColorText($"Spawn or room '{spawnOrRoomArg}' does not exist on the scene '{sceneData.SceneName}'.\nA typo perhaps?", Color.red));
+					output = $"Spawn or room '{spawnOrRoomArg}' does not exist on the scene '{sceneData.SceneName}'.\nA typo perhaps?";
+					DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 					return;
 				}
 			}
@@ -134,7 +133,8 @@ namespace DebugMenuCheats
 			// If index is out of bounds
 			else if (spawnOrRoomIndex >= sceneData.SpawnNames.Count)
 			{
-				Plugin.DMC.UpdateOutput(ModCore.Utility.ColorText($"Spawn index {spawnOrRoomIndex} was out of range for scene '{sceneData.SceneName}'\nThere are {sceneData.SpawnNames.Count} spawns for this scene.", Color.red));
+				output = $"Spawn index {spawnOrRoomIndex} was out of range for scene '{sceneData.SceneName}'\nThere are {sceneData.SpawnNames.Count} spawns for this scene.";
+				DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 				return;
 			}
 

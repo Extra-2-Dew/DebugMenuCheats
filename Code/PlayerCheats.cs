@@ -28,16 +28,10 @@ namespace DebugMenuCheats
 
 		private void LogNoIttleMessage()
 		{
-			LogToConsole("This requires Ittle to be present in the scene.", redColor);
+			DebugMenuManager.LogToConsole("This command requires Ittle to be present in the scene.", DebugMenuManager.TextColor.Error);
 		}
 
-		private void LogToConsole(string message, string color = defaultColor)
-		{
-			string output = ModCore.Utility.ColorText(message, color);
-			DebugMenuManager.Instance.UpdateOutput(output);
-		}
-
-		[Cheat(commandName: "god", commandAliases: ["godmode"])]
+		[DebugMenuCommand(commandName: "god", commandAliases: ["godmode"])]
 		private void ToggleGodMode(string[] args)
 		{
 			if (!TryGetPlayerEnt(out Entity player))
@@ -55,10 +49,11 @@ namespace DebugMenuCheats
 				killable.CurrentHp = killable.MaxHp;
 			}
 
-			LogToConsole($"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!", godModeToggled ? greenColor : redColor);
+			string output = $"GODMODE {(godModeToggled ? "engaged" : "deactivated")}!";
+			DebugMenuManager.LogToConsole(output, godModeToggled ? DebugMenuManager.TextColor.Success : DebugMenuManager.TextColor.Error);
 		}
 
-		[Cheat(commandName: "noclip")]
+		[DebugMenuCommand(commandName: "noclip")]
 		private void ToggleNoClip(string[] args)
 		{
 			if (!TryGetPlayerEnt(out Entity player))
@@ -70,10 +65,11 @@ namespace DebugMenuCheats
 			noClipToggled = !noClipToggled;
 			DoNoClip(player);
 
-			LogToConsole($"Noclip {(noClipToggled ? "enabled" : "disabled")}!", noClipToggled ? greenColor : redColor);
+			string output = $"Noclip {(noClipToggled ? "enabled" : "disabled")}!";
+			DebugMenuManager.LogToConsole(output, noClipToggled ? DebugMenuManager.TextColor.Success : DebugMenuManager.TextColor.Error);
 		}
 
-		[Cheat(commandName: "likeaboss")]
+		[DebugMenuCommand(commandName: "likeaboss")]
 		private void ToggleLikeABoss(string[] args)
 		{
 			if (!TryGetPlayerEnt(out Entity player))
@@ -83,10 +79,11 @@ namespace DebugMenuCheats
 			}
 
 			likeABossToggled = !likeABossToggled;
-			LogToConsole($"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!", likeABossToggled ? greenColor : redColor);
+			string output = $"One Hit Kill {(likeABossToggled ? "enabled" : "disabled")}!";
+			DebugMenuManager.LogToConsole(output, likeABossToggled ? DebugMenuManager.TextColor.Success : DebugMenuManager.TextColor.Error);
 		}
 
-		[Cheat(commandName: "setspeed", commandAliases: ["speed"])]
+		[DebugMenuCommand(commandName: "setspeed", commandAliases: ["speed"])]
 		private void SetMoveSpeed(string[] args)
 		{
 			if (!TryGetPlayerEnt(out Entity player))
@@ -98,14 +95,15 @@ namespace DebugMenuCheats
 			if (args.Length < 1 || !float.TryParse(args[0], out moveSpeedMultiplier))
 			{
 				moveSpeedMultiplier = 1;
-				LogToConsole("Must specify a number!", redColor);
+				DebugMenuManager.LogToConsole("Must specify a number!", DebugMenuManager.TextColor.Error);
 				return;
 			}
 
-			LogToConsole($"Set Ittle's speed multiplier to {moveSpeedMultiplier}!", greenColor);
+			string output = $"Set Ittle's speed multiplier to {moveSpeedMultiplier}!";
+			DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Success);
 		}
 
-		[Cheat(commandName: "setitems", commandAliases: ["setitem", "giveitems"])]
+		[DebugMenuCommand(commandName: "setitems", commandAliases: ["setitem", "giveitems"])]
 		private void SetItems(string[] args)
 		{
 			if (!TryGetPlayerEnt(out Entity player))
@@ -117,15 +115,20 @@ namespace DebugMenuCheats
 			if (itemData == null)
 				ParseItemDataJson();
 
+			string output;
+
 			if (itemData == null || itemData.Count == 0)
 			{
+				output = "Something went wrong when parsing item JSON. Please report this!";
+				DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 				Plugin.Log.LogError("Failed to parse JSON data for items");
 				return;
 			}
 
 			if (args.Length == 0)
 			{
-				LogToConsole("Command requires at least 1 argument.", redColor);
+				output = "Command requires at least 1 argument.";
+				DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 				return;
 			}
 
@@ -201,17 +204,21 @@ namespace DebugMenuCheats
 
 			if (selectedItem == null)
 			{
-				LogToConsole($"'{itemName}' was not a valid item name.", redColor);
+				output = $"'{itemName}' was not a valid item name.";
+				DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 				return;
 			}
 
 			if (itemLevel < 0 || itemLevel > selectedItem.MaxLevel)
 			{
-				LogToConsole($"Level is required and must be an number (integer) between 0 and {selectedItem.MaxLevel}.", redColor);
+				output = $"Level is required and must be an number (integer) between 0 and {selectedItem.MaxLevel}.";
+				DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Error);
 				return;
 			}
 
 			player.SetStateVariable(selectedItem.ItemName, itemLevel);
+			output = "Ittle's inventory has been updated!";
+			DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Success);
 
 			if (doSave)
 				ModCore.Plugin.MainSaver.SaveAll();
