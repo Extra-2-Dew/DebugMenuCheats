@@ -19,6 +19,11 @@ namespace DebugMenuCheats
 		private const string dataFileName = "gotoData.json";
 		private GotoData gotoData;
 
+		public GotoCommand()
+		{
+			DebugMenuManager.AddCommands(this);
+		}
+
 		[DebugMenuCommand(commandName: "goto")]
 		private void Goto(string[] args)
 		{

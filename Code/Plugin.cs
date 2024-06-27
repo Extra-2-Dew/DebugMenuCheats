@@ -11,11 +11,9 @@ namespace DebugMenuCheats
 	public class Plugin : BaseUnityPlugin
 	{
 		private static Plugin instance;
-		private PlayerCheats playerCheats = new();
 
 		internal static Plugin Instance { get { return instance; } }
 		internal static ManualLogSource Log { get; private set; }
-		internal static DebugMenuManager DMM { get { return DebugMenuManager.Instance; } }
 
 		private void Awake()
 		{
@@ -23,16 +21,13 @@ namespace DebugMenuCheats
 			Log = Logger;
 			Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
 
-			DebugMenuManager.AddCommands();
-			AddEventHooks();
-
-			Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
-		}
-
-		// Adds event subscriptions
-		private void AddEventHooks()
-		{
-			Events.OnPlayerSpawn += playerCheats.OnPlayerSpawn;
+			DebugMenuManager.Instance.OnDebugMenuInitialized += () =>
+			{
+				PlayerCheats playerCheats = new();
+				new GotoCommand();
+				Events.OnPlayerSpawn += playerCheats.OnPlayerSpawn;
+				Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
+			};
 		}
 	}
 }

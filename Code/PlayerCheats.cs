@@ -20,6 +20,11 @@ namespace DebugMenuCheats
 		private static bool noClipToggled;
 		private static bool likeABossToggled;
 
+		public PlayerCheats()
+		{
+			DebugMenuManager.AddCommands(this);
+		}
+
 		private bool TryGetPlayerEnt(out Entity player)
 		{
 			player = EntityTag.GetEntityByName("PlayerEnt");
