@@ -225,7 +225,7 @@ namespace DebugMenuCheats
 			output = "Ittle's inventory has been updated!";
 			DebugMenuManager.LogToConsole(output, DebugMenuManager.TextColor.Success);
 
-			if (doSave)
+			if (doSave && ModCore.Plugin.MainSaver != null)
 				ModCore.Plugin.MainSaver.SaveAll();
 		}
 
