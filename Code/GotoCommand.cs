@@ -162,6 +162,7 @@ namespace DebugMenuCheats
 
 		private void LoadScene(float fadeInTime = 1.25f)
 		{
+			DebugMenuManager.LogToConsole($"Warping to scene \"{gotoData.sceneName}\"", DebugMenuManager.TextColor.Success);
 			DebugMenuManager.Instance.ToggleMenuVisibility();
 			sceneFadeData._fadeInTime = fadeInTime;
 			SceneDoor.StartLoad(gotoData.sceneName, gotoData.spawnName, sceneFadeData, gotoData.doSave ? ModCore.Plugin.MainSaver : null);
@@ -175,6 +176,7 @@ namespace DebugMenuCheats
 			LevelRoom fromRoom = LevelRoom.GetRoomForPosition(player.transform.position);
 			LevelRoom toRoom = LevelRoom.currentRooms.Find(x => x.RoomName == gotoData.roomName);
 			Vector3 position = gotoData.doorData.SpawnPosition;
+			DebugMenuManager.LogToConsole($"Warping to room {toRoom.gameObject.name}", DebugMenuManager.TextColor.Success);
 
 			// Hide Debug Menu
 			DebugMenuManager.Instance.ToggleMenuVisibility();
