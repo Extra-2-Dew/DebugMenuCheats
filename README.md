@@ -2,6 +2,12 @@
 
 This mod adds several cheat commands
 
+## Installation
+
+1. Download the latest version of [ModCore](https://github.com/Extra-2-Dew/ModCore) along with its dependencies.
+2. Download the latest release (the zip file) from the [Releases page](https://github.com/Extra-2-Dew/DebugMenuCheats/releases).
+3. Unzip the release and drop it into your Bepinex plugins folder.
+
 ## Commands List
 | Command Name          | Description |
 | --------------------- | ----------- |
