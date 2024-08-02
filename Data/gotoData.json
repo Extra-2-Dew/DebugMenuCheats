@@ -731,7 +731,8 @@
 			"scene": "FluffyFieldsCaves",
 			"names": [
 				"FluffyCaves",
-				"FFCaves"
+				"FFCaves",
+				"FFC"
 			],
 			"spawns": [
 				"Fallback"
@@ -1017,7 +1018,9 @@
 				"CCCaves",
 				"SweetwaterCoastCaves",
 				"SCCaves",
-				"CoastCaves"
+				"CoastCaves",
+				"CCC",
+				"SCC"
 			],
 			"spawns": [
 				"Fallback"
@@ -1215,7 +1218,8 @@
 			"scene": "FancyRuinsCaves",
 			"names": [
 				"FancyCaves",
-				"FRCaves"
+				"FRCaves",
+				"FRC"
 			],
 			"spawns": [
 				"Fallback"
@@ -1391,7 +1395,8 @@
 			"scene": "StarWoodsCaves",
 			"names": [
 				"StarCaves",
-				"SWCaves"
+				"SWCaves",
+				"SWC"
 			],
 			"spawns": [
 				"Fallback"
@@ -1611,7 +1616,8 @@
 			"scene": "SlipperySlopeCaves",
 			"names": [
 				"SlopeCaves",
-				"SSCaves"
+				"SSCaves",
+				"SSC"
 			],
 			"spawns": [
 				"Fallback"
@@ -1782,7 +1788,9 @@
 				"PepperpainPrairieCaves",
 				"PepperpainCaves",
 				"PepCaves",
-				"PPCaves"
+				"PPCaves",
+				"VHC",
+				"PPC"
 			],
 			"spawns": [
 				"Fallback"
@@ -1990,7 +1998,8 @@
 			"scene": "FrozenCourtCaves",
 			"names": [
 				"FrozenCaves",
-				"FCCaves"
+				"FCCaves",
+				"FCC"
 			],
 			"spawns": [
 				"Fallback"
@@ -2161,7 +2170,8 @@
 			"scene": "LonelyRoadCaves",
 			"names": [
 				"LonelyCaves",
-				"LRCaves"
+				"LRCaves",
+				"LRC"
 			],
 			"spawns": [
 				"Fallback"
@@ -8376,7 +8386,8 @@
 				"WizardryLab",
 				"Wizardry",
 				"WL",
-				"DW1"
+				"DW1",
+				"DF"
 			],
 			"spawns": [
 				"DreamForceInside",
@@ -8628,7 +8639,8 @@
 			"names": [
 				"Syncope",
 				"S",
-				"DW2"
+				"DW2",
+				"DD"
 			],
 			"spawns": [
 				"DreamDynamiteInside",
@@ -9031,7 +9043,8 @@
 			"names": [
 				"Antigram",
 				"A",
-				"DW3"
+				"DW3",
+				"DFC"
 			],
 			"spawns": [
 				"DreamFireChainInside",
@@ -9304,7 +9317,8 @@
 			"names": [
 				"BottomlessTower",
 				"BT",
-				"DW4"
+				"DW4",
+				"DI"
 			],
 			"spawns": [
 				"DreamIceInside",
@@ -9762,7 +9776,8 @@
 			"names": [
 				"Quietus",
 				"Q",
-				"DW5"
+				"DW5",
+				"DA"
 			],
 			"spawns": [
 				"DreamAllInside",
